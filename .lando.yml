@@ -1,0 +1,6 @@
+name: online-orientation
+recipe: pantheon
+config:
+  framework: drupal8
+  site: online-orientation
+  id: 714bd05e-1a33-4f35-93a2-e9d6add67063
