@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e920507c34b0bd6e8b9adefca2134fd",
+    "content-hash": "a95cf44af0d359fb4dc81aaa354c1f00",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2212,17 +2212,17 @@
         },
         {
             "name": "drupal/config_installer",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_installer",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_installer-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "a1db5469775d3c104fd082929de0c7abe08241c6"
+                "url": "https://ftp.drupal.org/files/projects/config_installer-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "263006c947e814f766ff8420d1b7e4ea8c258ecd"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2233,8 +2233,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1519901110",
+                    "version": "8.x-1.7",
+                    "datestamp": "1520542980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4191,17 +4191,17 @@
         },
         {
             "name": "drupal/jsonapi",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "bf4fcd13769efab537eca1c7ec1c4a6f8235f586"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "a264bf2150f530a63986931f410709030eac3bb5"
             },
             "require": {
                 "drupal/core": "^8.3"
@@ -4217,8 +4217,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1520147585",
+                    "version": "8.x-1.13",
+                    "datestamp": "1520806680",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4349,6 +4349,112 @@
                 "source": "http://cgit.drupalcode.org/linkit",
                 "issues": "http://drupal.org/project/linkit"
             }
+        },
+        {
+            "name": "drupal/material_admin",
+            "version": "1.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/material_admin",
+                "reference": "8.x-1.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/material_admin-8.x-1.0-alpha6.zip",
+                "reference": "8.x-1.0-alpha6",
+                "shasum": "e68cc84fb5d043636324fe547908e4c98a0a61f6"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1520698984",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Bcwald",
+                    "homepage": "https://www.drupal.org/user/215794"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                }
+            ],
+            "description": "Material Design Admin Theme",
+            "homepage": "https://www.drupal.org/project/material_admin",
+            "support": {
+                "source": "http://cgit.drupalcode.org/material_admin"
+            }
+        },
+        {
+            "name": "drupal/material_admin_support",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/material_admin_support",
+                "reference": "a618eb1a86bf2f64f1eee5074abb897926199237"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/type_style": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1518614281",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Bcwald",
+                    "homepage": "https://www.drupal.org/user/215794"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                }
+            ],
+            "description": "Support module extends the functionality of Material_admin theme",
+            "homepage": "https://www.drupal.org/project/material_admin_support",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/material_admin_support",
+                "issues": "https://www.drupal.org/project/issues/material_admin_support"
+            },
+            "time": "2018-02-14T15:29:19+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -4572,6 +4678,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/metatag",
                 "issues": "http://drupal.org/project/issues/metatag"
+            }
+        },
+        {
+            "name": "drupal/moderation_sidebar",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/moderation_sidebar",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "2724417e272e27c379c8e614165dbb58a6d02731"
+            },
+            "require": {
+                "drupal/core": "^8.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1520437980",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                }
+            ],
+            "description": "Provides a frontend sidebar for Content Moderation",
+            "homepage": "https://www.drupal.org/project/moderation_sidebar",
+            "support": {
+                "source": "http://cgit.drupalcode.org/moderation_sidebar"
             }
         },
         {
@@ -5871,6 +6024,48 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twitter_block"
             }
+        },
+        {
+            "name": "drupal/type_style",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/type_style",
+                "reference": "486a8ec7c1c7dcd93790ee281c78cfa3dba90d78"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1513033985",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                }
+            ],
+            "description": "Adds configuration to distinctly style types (entity bundles).",
+            "homepage": "https://www.drupal.org/project/type_style",
+            "support": {
+                "source": "http://cgit.drupalcode.org/type_style"
+            },
+            "time": "2017-12-11T23:10:48+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -11461,7 +11656,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "stability-flags": {
         "drupal/addanother": 5,
         "drupal/auto_entitylabel": 10,
@@ -11474,7 +11669,10 @@
         "drupal/entity_share": 15,
         "drupal/field_permissions": 10,
         "drupal/inline_entity_form": 10,
+        "drupal/material_admin": 15,
+        "drupal/material_admin_support": 20,
         "drupal/menu_link_config": 15,
+        "drupal/moderation_sidebar": 10,
         "drupal/rabbit_hole": 10,
         "drupal/search_api_page": 15,
         "drupal/simple_block": 10,
