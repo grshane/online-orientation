@@ -1,0 +1,21 @@
+uuid: 26272d32-4404-4e58-bc9c-ffcefebde8ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guide_card_text
+    - node.type.guide
+  module:
+    - text
+id: node.guide.field_guide_card_text
+field_name: field_guide_card_text
+entity_type: node
+bundle: guide
+label: 'Card Text'
+description: 'Content when guides are displayed in a grid.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

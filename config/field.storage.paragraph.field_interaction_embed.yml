@@ -1,0 +1,19 @@
+uuid: 6bf8c4f2-da7a-4994-8c2d-40fb5d594a43
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_interaction_embed
+field_name: field_interaction_embed
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

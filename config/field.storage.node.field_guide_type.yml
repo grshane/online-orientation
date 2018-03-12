@@ -1,0 +1,27 @@
+uuid: 778a11bd-22e5-4806-a500-9c826a6c49f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_guide_type
+field_name: field_guide_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: internal
+      label: 'Internal Guide'
+    -
+      value: external
+      label: 'External Guide'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

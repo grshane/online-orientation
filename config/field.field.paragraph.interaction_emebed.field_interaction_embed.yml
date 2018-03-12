@@ -1,0 +1,19 @@
+uuid: 6229537a-15f6-4e07-bf30-17fc12e69c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_interaction_embed
+    - paragraphs.paragraphs_type.interaction_emebed
+id: paragraph.interaction_emebed.field_interaction_embed
+field_name: field_interaction_embed
+entity_type: paragraph
+bundle: interaction_emebed
+label: 'Interaction Embed'
+description: 'Place embed code here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,60 @@
+uuid: b208c37a-6f87-470a-93d7-e0c9b563189f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.guide.field_guide_card_text
+    - field.field.node.guide.field_guide_link
+    - field.field.node.guide.field_guide_type
+    - field.field.node.guide.field_guide_wrapper
+    - node.type.guide
+  module:
+    - entity_reference_revisions
+    - link
+    - options
+    - text
+    - user
+id: node.guide.default
+targetEntityType: node
+bundle: guide
+mode: default
+content:
+  field_guide_card_text:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_guide_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_guide_type:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_guide_wrapper:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

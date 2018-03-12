@@ -1,0 +1,23 @@
+uuid: 8635b810-51ae-4f19-a0f4-dd84ac08dd5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guide_type
+    - node.type.guide
+  module:
+    - options
+id: node.guide.field_guide_type
+field_name: field_guide_type
+entity_type: node
+bundle: guide
+label: 'Type of Guide Content'
+description: 'Select if the card links to an external resource or an expanded internal resource'
+required: true
+translatable: false
+default_value:
+  -
+    value: internal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

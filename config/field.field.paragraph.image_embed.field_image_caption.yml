@@ -1,0 +1,21 @@
+uuid: e667f18a-638f-4dea-90b0-d696041e2d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_caption
+    - paragraphs.paragraphs_type.image_embed
+  module:
+    - text
+id: paragraph.image_embed.field_image_caption
+field_name: field_image_caption
+entity_type: paragraph
+bundle: image_embed
+label: 'Image Caption'
+description: 'Use to add a caption. This does not replace alt-text and may not be displayed with the image in all display modes. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,9 @@
+uuid: e8708641-b574-4256-8566-f409f4b1b02f
+langcode: en
+status: true
+dependencies: {  }
+id: text_section
+label: 'Text Section'
+icon_uuid: null
+description: 'Use this for a generic text area. Limited HTML tags are available.'
+behavior_plugins: {  }

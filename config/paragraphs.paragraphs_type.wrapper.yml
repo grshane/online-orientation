@@ -1,0 +1,9 @@
+uuid: 9dda45cc-479c-4e15-96bd-d5d968839cc8
+langcode: en
+status: true
+dependencies: {  }
+id: wrapper
+label: 'Guide Builder'
+icon_uuid: null
+description: 'Serves as a container for other paragraphs'
+behavior_plugins: {  }

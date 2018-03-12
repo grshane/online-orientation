@@ -1,0 +1,22 @@
+uuid: 2718e168-0a29-45e9-8c0d-cdfbaa35fe89
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - wvuorientation
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: wvuorientation_help
+theme: wvuorientation
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

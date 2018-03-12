@@ -1,0 +1,35 @@
+uuid: 28a268a3-6269-43e0-9ea4-bdc021202dfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_list.field_list_link
+    - field.field.paragraph.link_list.field_list_title
+    - paragraphs.paragraphs_type.link_list
+  module:
+    - link
+id: paragraph.link_list.default
+targetEntityType: paragraph
+bundle: link_list
+mode: default
+content:
+  field_list_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_list_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

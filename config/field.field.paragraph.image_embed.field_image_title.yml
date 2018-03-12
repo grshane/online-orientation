@@ -1,0 +1,19 @@
+uuid: 8e56407a-9802-4721-a84b-2c76f40e465d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_title
+    - paragraphs.paragraphs_type.image_embed
+id: paragraph.image_embed.field_image_title
+field_name: field_image_title
+entity_type: paragraph
+bundle: image_embed
+label: 'Image Title'
+description: 'Title for an image when the caption is displayed'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

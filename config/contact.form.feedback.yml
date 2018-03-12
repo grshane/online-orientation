@@ -1,4 +1,4 @@
-uuid: 8566011d-f078-4ce9-8400-59a7f95efae9
+uuid: 704c683a-fe34-4203-b47c-b09460fb5d4a
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - grshane@gmail.com
+  - gregg.shanefelt@mail.wvu.edu
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

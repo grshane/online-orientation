@@ -1,0 +1,22 @@
+uuid: 3ba2224d-b551-4cb2-9ebf-f3399cdfe1b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_embed
+    - paragraphs.paragraphs_type.video_embed
+  module:
+    - video_embed_field
+id: paragraph.video_embed.field_video_embed
+field_name: field_video_embed
+entity_type: paragraph
+bundle: video_embed
+label: 'Video Embed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers: {  }
+field_type: video_embed_field

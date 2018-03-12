@@ -1,0 +1,9 @@
+uuid: 98f90710-bf19-44f1-9bb1-863caaf69062
+langcode: en
+status: true
+dependencies: {  }
+id: media_gallery
+label: 'Media Gallery'
+icon_uuid: null
+description: 'Displays a group of images and/or videos.'
+behavior_plugins: {  }

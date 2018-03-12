@@ -1,0 +1,20 @@
+uuid: 9e06325b-e769-4237-8b40-94a2f25bf789
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wvuorientation
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: wvuorientation_page_title
+theme: wvuorientation
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
