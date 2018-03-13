@@ -1,14 +1,14 @@
 # https://circleci.com/docs/2.0/workflows/#using-workspaces-to-share-data-among-jobs
 defaults: &defaults
   docker:
-    - image: quay.io/pantheon-public/build-tools-ci:1.x
+    - image: quay.io/grshane/pantheon-build-node:1.x
   working_directory: ~/example_drops_8_composer
   environment:
     #=========================================================================
     # In addition to the environment variables defined in this file, also
     # add the following variables in the Circle CI UI.
     #
-    # See: https://circleci.com/docs/2.0/env-vars/
+    # See: https://circleci.com/docs/2.0/environment-variables/
     #
     # TERMINUS_SITE:  Name of the Pantheon site to run tests on, e.g. my_site
     # TERMINUS_TOKEN: The Pantheon machine token
@@ -18,6 +18,7 @@ defaults: &defaults
     # TEST_SITE_NAME: The name of the test site to provide when installing.
     # ADMIN_PASSWORD: The admin password to use when installing.
     # ADMIN_EMAIL:    The email address to give the admin when installing.
+    # THEME_NAME:     The name of your custom theme usually 
     #=========================================================================
     TZ: "/usr/share/zoneinfo/America/Los_Angeles"
 
@@ -90,12 +91,18 @@ jobs:
                 keys:
                     - composer-cache
                     - terminus-install
+                    - node-cache
 
             - run:
                 # Set TERMINUS_ENV and related environment variables.
                 # https://github.com/pantheon-systems/docker-build-tools-ci/blob/1.x/scripts/set-environment
                 name: dependencies
                 command: /build-tools-ci/scripts/set-environment
+
+            #- run:
+            #    name: add node
+            #    command: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+            #                         && sudo apt-get install -y nodejs
 
             - run:
                 name: install dev dependencies, build assets, etc.
@@ -104,15 +111,28 @@ jobs:
             - run:
                 name: build assets
                 command: composer -n build-assets
+            
+            - run:
+                name: Install Node Modules
+                command: cd /web/themes/custom/{theme_name} && yarn 
+            
+            - save_cache:
+                key: node-cache
+                paths:
+                    - $HOME/.node/cache
+
+            - run:    
+                name: Build Theme Assets
+                command: cd /web/themes/custom/{theme_name} && gulp build
 
             - run:
                 name: prepare database for site-under test
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
                 # command: ./.circleci/scripts/pantheon/02-init-site-under-test-reinstall-new
 
-            #- run:
-            #    name: run functional tests with Behat
-            #    command: ./tests/scripts/run-behat
+#            - run:
+#                name: run functional tests with Behat
+#                command: ./tests/scripts/run-behat
 
             - run:
                 name: post-test actions
