@@ -20,6 +20,7 @@ module:
   components: 0
   conditional_fields: 0
   config: 0
+  config_direct_save: 0
   config_update: 0
   config_update_ui: 0
   contact: 0

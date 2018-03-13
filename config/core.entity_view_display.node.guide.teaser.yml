@@ -15,4 +15,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_guide_card_text: true
+  field_guide_link: true
+  field_guide_type: true
+  field_guide_wrapper: true
