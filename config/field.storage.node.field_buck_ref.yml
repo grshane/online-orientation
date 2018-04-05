@@ -1,0 +1,20 @@
+uuid: 4192d0b2-36e7-47a7-bfbb-1a75d5eaedb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_buck_ref
+field_name: field_buck_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.guide.field_buck_ref
     - field.field.node.guide.field_guide_card_text
     - field.field.node.guide.field_guide_link
     - field.field.node.guide.field_guide_type
@@ -10,6 +11,7 @@ dependencies:
     - node.type.guide
   module:
     - conditional_fields
+    - entity_reference_views_select
     - link
     - paragraphs
     - path
@@ -19,6 +21,12 @@ targetEntityType: node
 bundle: guide
 mode: default
 content:
+  field_buck_ref:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_buttons
+    region: content
   field_guide_card_text:
     weight: 1
     settings:
@@ -28,7 +36,7 @@ content:
     type: text_textarea
     region: content
   field_guide_link:
-    weight: 4
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -65,7 +73,7 @@ content:
     region: content
   field_guide_wrapper:
     type: paragraphs
-    weight: 3
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -101,7 +109,7 @@ content:
     region: content
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -109,7 +117,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
