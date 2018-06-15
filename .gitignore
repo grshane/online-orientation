@@ -30,6 +30,7 @@ web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/update.php
 web/web.config
+web/.ht.router.php
 
 # Generated files for frontend
 web/themes/custom/wvuidesign/node_modules
