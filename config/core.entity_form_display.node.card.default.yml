@@ -1,0 +1,46 @@
+uuid: d5b1f2f7-f1c9-4124-bdf9-8b31f1c260a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.card.field_card_type_ref
+    - field.field.node.card.field_card_visitor_type_ref
+    - node.type.card
+id: node.card.default
+targetEntityType: node
+bundle: card
+mode: default
+content:
+  field_card_type_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_card_visitor_type_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

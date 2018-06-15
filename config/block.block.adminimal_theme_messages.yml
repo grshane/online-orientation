@@ -1,17 +1,17 @@
-uuid: fb9a40e3-56c6-47b5-87a1-359d7a876e19
+uuid: fbf57b2a-742b-43dc-b019-2c8e92ebbea3
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - wvuorientation
+    - adminimal_theme
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: wvuorientation_messages
-theme: wvuorientation
-region: header
-weight: -3
+  default_config_hash: YqKTtloWJ8FjLtfVNfrHaK6kVgxT67lC1cJ3j6i6WLo
+id: adminimal_theme_messages
+theme: adminimal_theme
+region: highlighted
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

@@ -1,0 +1,17 @@
+uuid: 5be7db46-bcbb-4a99-b623-d2bf4b5aaea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: front_page_only_path
+label: 'Front Page Only Path'
+logic: or
+conditions:
+  d0f7afdb-842c-4e92-ad94-04600873c120:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+    uuid: d0f7afdb-842c-4e92-ad94-04600873c120
+allow_other_conditions: false

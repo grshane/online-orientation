@@ -1,6 +1,6 @@
 uuid: b47a81c7-072c-4f6e-ae41-c9c69009e088
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -13,7 +13,7 @@ _core:
 id: wvuorientation_tools
 theme: wvuorientation
 region: header
-weight: 0
+weight: 1
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

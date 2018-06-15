@@ -1,0 +1,21 @@
+uuid: bb7fadbf-348c-4e31-8014-40f9b952ed3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vdas.field_vdas_visitor_type_ref
+    - node.type.vdas
+  module:
+    - user
+id: node.vdas.default
+targetEntityType: node
+bundle: vdas
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_vdas_visitor_type_ref: true

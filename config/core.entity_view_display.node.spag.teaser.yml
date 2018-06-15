@@ -1,0 +1,18 @@
+uuid: f17aea6c-3821-46ba-9a97-0cae99a91b73
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.spag
+  module:
+    - user
+id: node.spag.teaser
+targetEntityType: node
+bundle: spag
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

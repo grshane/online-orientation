@@ -1,0 +1,22 @@
+uuid: 92393ddc-0e69-46d2-beaa-6b4b922a1bb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: visitor_type_alias
+label: 'Visitor Type Alias'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  fa13ba6c-bea7-470d-97e0-c06f109f6bb0:
+    id: node_type
+    bundles:
+      vtyp: vtyp
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fa13ba6c-bea7-470d-97e0-c06f109f6bb0
+selection_logic: and
+weight: -5
+relationships: {  }

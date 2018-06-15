@@ -1,0 +1,35 @@
+uuid: 6317ca13-c2ee-40b4-bb67-c2ea57adcf0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front_page_only_path
+    - system.menu.visitor-type-menu
+  module:
+    - block_class
+    - block_visibility_groups
+    - system
+  theme:
+    - wvuorientation
+third_party_settings:
+  block_class:
+    classes: ''
+id: visitortypemenu
+theme: wvuorientation
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:visitor-type-menu'
+settings:
+  id: 'system_menu_block:visitor-type-menu'
+  label: 'What type of student are you?'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front_page_only_path
+    context_mapping: {  }
