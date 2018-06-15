@@ -1,17 +1,17 @@
-uuid: 8df494dc-2912-426c-a33e-99a658859299
+uuid: f0e4f163-140e-4648-92aa-e1773a197092
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - wvuorientation
+    - adminimal_theme
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: wvuorientation_breadcrumbs
-theme: wvuorientation
-region: header
-weight: -4
+  default_config_hash: 8by5KRsb7ZpmjHj0ms1d7xAG_xH54AWsOX6spDLJ59U
+id: adminimal_theme_breadcrumbs
+theme: adminimal_theme
+region: breadcrumb
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

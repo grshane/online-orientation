@@ -1,13 +1,13 @@
-uuid: 2dad3703-8768-4996-a692-3e4e1070697e
+uuid: d1d06400-db3a-4413-a072-a20a59f4351b
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.guide
-id: node.guide.promote
+    - node.type.vdas
+id: node.vdas.promote
 field_name: promote
 entity_type: node
-bundle: guide
+bundle: vdas
 label: 'Promoted to front page'
 description: ''
 required: false

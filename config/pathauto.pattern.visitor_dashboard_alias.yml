@@ -1,0 +1,22 @@
+uuid: f48f52f9-8e16-47ae-89f2-1969fe2e6227
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: visitor_dashboard_alias
+label: 'Visitor Dashboard Alias'
+type: 'canonical_entities:node'
+pattern: '/visitors/[node:field_vdas_visitor_type_ref]/dashboard'
+selection_criteria:
+  5902e97c-d483-452e-a719-241d42c610c4:
+    id: node_type
+    bundles:
+      vdas: vdas
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5902e97c-d483-452e-a719-241d42c610c4
+selection_logic: and
+weight: -5
+relationships: {  }

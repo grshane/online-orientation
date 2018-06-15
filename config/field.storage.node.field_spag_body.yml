@@ -1,16 +1,16 @@
-uuid: 8e18234d-b9f1-4167-83a9-83946cb58b68
+uuid: 26b6f855-b73a-44f6-a855-f7e8eaae4fff
 langcode: en
 status: true
 dependencies:
   module:
-    - link
     - node
-id: node.field_guide_link
-field_name: field_guide_link
+    - text
+id: node.field_spag_body
+field_name: field_spag_body
 entity_type: node
-type: link
+type: text_long
 settings: {  }
-module: link
+module: text
 locked: false
 cardinality: 1
 translatable: true

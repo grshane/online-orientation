@@ -1,6 +1,6 @@
 uuid: 8bff85ea-9a46-432b-b0cd-e08434beab28
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: wvuorientation_powered
 theme: wvuorientation
 region: header
-weight: 10
+weight: 2
 provider: null
 plugin: system_powered_by_block
 settings:
