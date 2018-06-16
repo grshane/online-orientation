@@ -15,4 +15,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_card_type_ref: true
+  field_card_visitor_type_ref: true
