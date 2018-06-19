@@ -1,3 +1,7 @@
+card_modifiers:
+  1:
+    multiple
+
 # Title
 card_title:
   'Getting started: claiming your account'
