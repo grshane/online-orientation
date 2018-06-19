@@ -8,6 +8,7 @@ core: 8.x
 libraries:
   - 'wvuorientation/global'
   # - 'wvuorientation/typekit'
+  # - 'wvuorientation/fonts'
 
 # Libraries override allows you to remove libraries added by other projects.
 # libraries-override:

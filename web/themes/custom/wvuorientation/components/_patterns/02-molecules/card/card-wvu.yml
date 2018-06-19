@@ -1,0 +1,31 @@
+card_modifiers:
+  1:
+    bg
+
+# Title
+card_title:
+  'Getting started: claiming your account'
+
+card_serial_number:
+  '3'
+
+# Body
+card_body:
+  "Students will need to claim their accounts by
+   visiting,
+   http://login.wvu.edu
+    and clicking
+   Claim Account. Follow the directions. If you
+   don’t know your WVU ID you can look it up
+   by clicking the link at the top: Self-Service
+   Tools, and then click: Forgot your WVUID.
+   Once you have claimed your account, write
+   down your log in information and password."
+card_body_modifiers:
+card_body_blockname:
+
+# Button
+card_button_url:
+  '#'
+card_button_content:
+  'Read more'

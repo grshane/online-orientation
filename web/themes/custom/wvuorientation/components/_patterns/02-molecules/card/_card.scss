@@ -1,10 +1,24 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-top: 40px solid $wvu-blue;
+}
+
 .card__title {
-  @include heading-large($font-size: 1.3rem);
+  @include heading-xl($font-size: 2rem, $color: $wvu-blue);
   @include no-bottom;
+
+  text-transform: uppercase;
 
   &-link {
     @include link;
   }
+}
+
+.serial {
+  @include heading-xl($font-size: 2rem, $color: $wvu-blue);
 }
 
 .card__subtitle {
@@ -16,6 +30,7 @@
 
 .card__body {
   margin: 0.7em 0 1em;
+  color: black;
 }
 
 .card__link {
@@ -24,10 +39,36 @@
 
 .card__button {
   @include button;
+
+  border-radius: 5px;
+  background-color: $wvu-blue;
+  font-weight: bold;
+  color: $wvu-gold;
+  display: flex;
+  margin: auto;
+  text-transform: initial;
+  width: 80%;
+  justify-content: center;
+  height: 50px;
+  font-size: 1.3em;
+}
+
+.card__external_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 25px;
+  transform: translate(-100%, -100%);
+}
+
+.title_serial {
+  display: flex;
+  justify-content: space-between;
 }
 
 // Variations
 .card--bg {
-  background-color: $gray-lightest;
+  background-color: $white;
   padding: 1em;
 }

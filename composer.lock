@@ -6577,12 +6577,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fourkitchens/emulsify.git",
-                "reference": "b25b95a62a1246205c575af00c681e19cdbc51e2"
+                "reference": "17c08a8ef6f2f581df071f6f2fbbdc0f356c659a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/b25b95a62a1246205c575af00c681e19cdbc51e2",
-                "reference": "b25b95a62a1246205c575af00c681e19cdbc51e2",
+                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/17c08a8ef6f2f581df071f6f2fbbdc0f356c659a",
+                "reference": "17c08a8ef6f2f581df071f6f2fbbdc0f356c659a",
                 "shasum": ""
             },
             "require": {
@@ -6616,7 +6616,7 @@
             ],
             "description": "Project template for Drupal 8 themes",
             "homepage": "http://emulsify.info",
-            "time": "2018-06-11T14:55:02+00:00"
+            "time": "2018-06-15T13:59:09+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
