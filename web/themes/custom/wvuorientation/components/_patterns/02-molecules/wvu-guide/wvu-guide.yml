@@ -1,13 +1,9 @@
-card_modifiers:
-  1:
-    multiple
-
 # Title
 card_title:
   'Getting started: claiming your account'
 
 card_serial_number:
-  '3'
+  '1'
 
 # Body
 card_body:
@@ -28,4 +24,4 @@ card_body_blockname:
 card_button_url:
   '#'
 card_button_content:
-  'Read more'
+  'Claim Your Account'

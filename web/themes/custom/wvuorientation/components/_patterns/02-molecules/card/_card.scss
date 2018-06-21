@@ -1,86 +1,33 @@
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  border-top: 40px solid $wvu-blue;
-  background-color: white;
-  padding: 1em;
-  margin-bottom: 40px;
-  box-shadow: 0 0.0625em 0.1875em 0 rgba(0,0,0,.3);
-}
-
 .card__title {
-@include heading-xl($font-size: 2rem, $color: $wvu-blue);
-@include no-bottom;
+  @include heading-large($font-size: 1.3rem);
+  @include no-bottom;
 
-text-transform: uppercase;
-
-&-link {
-  @include link;
-}
-}
-
-.serial {
-@include heading-xl($font-size: 2rem, $color: $wvu-blue);
+  &-link {
+    @include link;
+  }
 }
 
 .card__subtitle {
-@include heading-medium($font-size: 1rem);
-@include no-bottom;
+  @include heading-medium($font-size: 1rem);
+  @include no-bottom;
 
-color: $gray;
+  color: $gray;
 }
 
 .card__body {
-margin: 0.7em 0 1em;
-color: black;
+  margin: 0.7em 0 1em;
 }
 
 .card__link {
-@include link;
+  @include link;
 }
 
 .card__button {
-@include button;
-
-border-radius: 5px;
-background-color: $wvu-blue;
-font-weight: bold;
-color: $wvu-gold;
-display: flex;
-margin: auto;
-text-transform: initial;
-width: 80%;
-justify-content: center;
-height: 50px;
-font-size: 1.3em;
-}
-
-.card__external_link {
-position: absolute;
-top: 0;
-right: 0;
-color: white;
-font-size: 25px;
-transform: translate(-100%, -100%);
-}
-
-.title_serial {
-display: flex;
-justify-content: space-between;
+  @include button;
 }
 
 // Variations
 .card--bg {
-background-color: $white;
-padding: 1em;
-}
-
-.card--multiple {
-  box-shadow: 0 0.0625em 0.1875em 0 rgba(0,0,0,0.3),
-  0 0.75em 0 -0.25em #d0d0d0,
-  0 0.75em 0.1875em -0.25em rgba(0,0,0,0.3),
-  0 1.5em 0 -0.5em #b1b1b1,
-  0 1.5em 0.1875em -0.5em rgba(0,0,0,0.3);
+  background-color: $gray-lightest;
+  padding: 1em;
 }
