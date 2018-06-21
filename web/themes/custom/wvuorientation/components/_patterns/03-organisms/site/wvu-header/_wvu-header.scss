@@ -1,114 +1,12 @@
-// Header Main Menu
-//
-// Header menus styling for main nav
-//
-// Markup: header.twig
-//
-// Style guide: components.header
+@import '../../../00-base/global/base/01-variables';
+@import '../../../00-base/global/01-colors/color-vars';
+@import '../../../00-base/global/base/02-breakpoints';
 
-.mq-header {
-  margin: 0 auto;
-}
+.wvu-masthead {
+  background: $wvu-blue;
+  padding: 2em 0;
 
-#header {
-  width: 95vw;
-  min-height: 130px;
-  margin: auto;
-  background: $white;
-
-  @supports (clip-path: polygon()) {
-    clip-path:
-      polygon(
-        0% 0%,
-        100% 0,
-        100% calc(100% - 2.3vw),
-        40% calc(100% - 2vw),
-        39% calc(100% - 1.5vw),
-        0% 100%
-      );
-  }
-
-  svg#clipPath {
-    @supports not (clip-path: polygon()) {
-      display: none;
-    }
-  }
-}
-
-.region-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1em 0;
-
-  @media (max-width: 800px) {
-    justify-content: space-around;
-  }
-
-  .menu--main {
-    display: flex;
-    align-items: center;
-
-    .menu {
-      display: flex;
-      justify-content: flex-end;
-      margin: 0;
-      align-items: center;
-
-      .menu__item {
-        display: flex;
-        list-style: none;
-        height: 3.625em;
-        padding: 0.5em;
-
-        a {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: center;
-          color: $gray-dark;
-
-          &:hover {
-            text-decoration: none;
-
-            &::before {
-              color: darken($wvu-blue, 20%);
-            }
-          }
-
-          &::before {
-            font-family: 'FontAwesome';
-            font-size: 1.2em;
-            color: $wvu-blue;
-          }
-        }
-
-        &--home a {
-
-          &::before {
-            content: "\f05a";
-          }
-        }
-
-        &--schedule a {
-
-          &::before {
-            content: "\f073";
-          }
-        }
-        &--venue a {
-
-          &::before {
-            content: "\f279";
-          }
-        }
-        &--more a {
-
-          &::before {
-            content: "\f141";
-          }
-        }
-      }
-    }
+  .container {
+    @extend %container;
   }
 }

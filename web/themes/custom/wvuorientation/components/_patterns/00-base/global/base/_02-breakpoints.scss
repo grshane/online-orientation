@@ -65,3 +65,15 @@ $max-width: $xl;
     @content;
   }
 }
+
+// Container
+%container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: block;
+  padding: 0 1em;
+
+  @media large {
+    padding: 0;
+  }
+}
