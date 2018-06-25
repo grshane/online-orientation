@@ -2,13 +2,13 @@
   background: url("svg/sprite.css.svg") no-repeat;
 }
 
-@mixin sprite-menu {
+@mixin sprite-bars {
   @include svg-common;
 
   background-position: 0 0;
 }
 
-.sprite-menu {
-  @include sprite-menu;
+.sprite-bars {
+  @include sprite-bars;
 }
 

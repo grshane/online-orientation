@@ -1,0 +1,28 @@
+card_external_link:
+  true
+
+
+# Title
+card_title:
+  'TWO-FACTOR AUTHENTICATION'
+
+card_serial_number:
+  '3'
+
+# Body
+card_body:
+  "Starting fall semester 2018, all students will
+   be enrolled in Duo two-factor authentication.
+   Two-factor authentication secures your ac-
+   count by confirming your identity in two ways
+   – with something you KNOW (your Login
+   password) and something you HAVE (an app
+   on your smartphone/tablet or display token)."
+card_body_modifiers:
+card_body_blockname:
+
+# Button
+card_button_url:
+  '#'
+card_button_content:
+  'Enroll in Two-Factor'

@@ -1,0 +1,106 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-top: 3em solid $wvu-blue;
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 40px;
+  box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.3);
+}
+
+.card__title {
+  @include heading-xl($font-size: 2rem, $color: $wvu-blue);
+  @include no-bottom;
+
+  text-transform: uppercase;
+
+  &-link {
+    @include link;
+  }
+}
+
+.serial {
+  @include heading-xl($font-size: 2rem, $color: $wvu-blue);
+}
+
+.card__subtitle {
+  @include heading-medium($font-size: 1rem);
+  @include no-bottom;
+
+  color: $gray;
+}
+
+.card__body {
+  margin: 0.7em 0 1em;
+  color: black;
+}
+
+.card__link {
+  @include link;
+}
+
+.card__button {
+  @include button;
+
+  border-radius: 5px;
+  background-color: $wvu-blue;
+  font-weight: bold;
+  color: $wvu-gold;
+  display: flex;
+  margin: auto;
+  text-transform: initial;
+  width: 80%;
+  justify-content: center;
+  height: 3em;
+  font-size: 1.3em;
+}
+
+.card__external_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 25px;
+  transform: translate(40%, -140%);
+  height: 1em;
+}
+
+.title_serial {
+  display: flex;
+  justify-content: space-between;
+}
+
+svg.external-link__icon {
+  fill: white;
+  height: 100%;
+}
+
+.card__extra {
+  overflow:hidden;
+  transition:max-height 3s cubic-bezier(1,0,1,0); // note that we're transitioning max-height, not height!
+  height:auto;
+  max-height:9999px; // pump it ALL the way up!
+  color: black;
+}
+
+.card__extra.collapsed {
+  max-height: 0;
+  transition: max-height 1s cubic-bezier(0,1,0,1);
+}
+
+// Variations
+.card--bg {
+  background-color: $white;
+  padding: 1em;
+}
+
+.card--multiple {
+  box-shadow:
+    0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.3),
+    0 0.75em 0 -0.25em #d0d0d0,
+    0 0.75em 0.1875em -0.25em rgba(0, 0, 0, 0.3),
+    0 1.5em 0 -0.5em #b1b1b1,
+    0 1.5em 0.1875em -0.5em rgba(0, 0, 0, 0.3);
+}

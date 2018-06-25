@@ -122,7 +122,7 @@ jobs:
 
             - run:
                 name: Build Theme Assets
-                command: cd web/themes/custom/wvuorientation && gulp build
+                command: cd web/themes/custom/$THEME_NAME && gulp compile && gulp build
 
             - run:
                 name: prepare database for site-under test
