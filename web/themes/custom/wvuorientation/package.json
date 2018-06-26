@@ -10,5 +10,8 @@
     "start": "gulp clean && gulp compile && gulp theme",
     "postinstall": "./scripts/pattern_lab.sh && ./scripts/twig_functions.sh"
   },
-  "precommit.silent": true
+  "precommit.silent": true,
+  "dependencies": {
+    "van11y-accessible-hide-show-aria": "^3.0.1"
+  }
 }
