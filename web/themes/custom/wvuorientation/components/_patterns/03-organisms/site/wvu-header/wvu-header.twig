@@ -1,13 +1,6 @@
-
-<div id="header" role="banner">
-  <div class="region-header">
-    {{ content }}
-  </div>
-  <svg id="clipPath" height="0" width="0">
-    <defs>
-      <clipPath id="svgPath">
-        <path class="cls-1" d="M0,142.82l495.61-27,16-26L1279,106V0H0Z"/>
-      </clipPath>
-    </defs>
-  </svg>
-</div>
+{% set header_base_class = header_base_class|default('wvu-masthead') %}
+<header {{ bem(header_base_class, (header_modifiers), header_blockname) }} >
+  <div class="container">
+    {% include "@molecules/flying-wv/flying-wv.twig" %}
+    </div>
+</header>
