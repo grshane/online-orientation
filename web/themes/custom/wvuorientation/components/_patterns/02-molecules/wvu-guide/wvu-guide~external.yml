@@ -1,7 +1,5 @@
 card_external_link:
   true
-
-
 # Title
 card_title:
   'TWO-FACTOR AUTHENTICATION'
@@ -23,6 +21,6 @@ card_body_blockname:
 
 # Button
 card_button_url:
-  '#'
+  'https://www.wvu.edu'
 card_button_content:
   'Enroll in Two-Factor'
