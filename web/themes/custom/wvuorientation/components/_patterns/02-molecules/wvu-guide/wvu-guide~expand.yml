@@ -1,6 +1,9 @@
 card_modifiers:
   1:
-    TBD - expanded
+    expand-card
+
+card_extra_content:
+  true
 
 # Title
 card_title:

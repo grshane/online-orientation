@@ -19,27 +19,37 @@
 
   'use strict';
 
-  // Use context instead of document IF DRUPAL.
-  var toggle_expand = document.getElementById('toggle-expand');
-  var menu = document.getElementById('main-nav');
-  var expand_menu = menu.getElementsByClassName('expand-sub');
-
-  // Mobile Menu Show/Hide.
-  toggle_expand.addEventListener('click', function (e) {
-    toggle_expand.classList.toggle('toggle-expand--open');
-    menu.classList.toggle('main-nav--open');
+  // var my_expand = van11yAccessibleHideShowAria();
+  // my_expand.attach(document.getElementById('testy'));
+  /*
+  var other_expand = van11yAccessibleHideShowAria({
+    HIDESHOW_EXPAND: 'js-expandmore2',
+    DATA_PREFIX_CLASS: 'data-hideshow-prefix-class2'
   });
-
-  // Expose mobile sub menu on click.
-  for (var i = 0; i < expand_menu.length; i++) {
-    expand_menu[i].addEventListener('click', function (e) {
-      var menu_item = e.currentTarget;
-      var sub_menu = menu_item.nextElementSibling;
-
-      menu_item.classList.toggle('expand-sub--open');
-      sub_menu.classList.toggle('main-menu--sub-open');
-    });
-  }
+  other_expand.attach();
+  */
+  //
+  // // Use context instead of document IF DRUPAL.
+  // var toggle_expand = document.getElementById('toggle-expand');
+  // var menu = document.getElementById('main-nav');
+  // var expand_menu = menu.getElementsByClassName('expand-sub');
+  //
+  // // Mobile Menu Show/Hide.
+  // toggle_expand.addEventListener('click', function (e) {
+  //   toggle_expand.classList.toggle('toggle-expand--open');
+  //   menu.classList.toggle('main-nav--open');
+  // });
+  //
+  // // Expose mobile sub menu on click.
+  // for (var i = 0; i < expand_menu.length; i++) {
+  //   expand_menu[i].addEventListener('click', function (e) {
+  //     var menu_item = e.currentTarget;
+  //     var sub_menu = menu_item.nextElementSibling;
+  //
+  //     menu_item.classList.toggle('expand-sub--open');
+  //     sub_menu.classList.toggle('main-menu--sub-open');
+  //   });
+  // }
 
 })(); // REMOVE IF DRUPAL.
 
