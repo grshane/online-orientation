@@ -1,16 +1,7 @@
 .card__grid {
   @include grid;
+  //@include css-grid;
   @include margin;
-}
-
-.card--grid-item {
-  @include grid-item(3);
-
-  align-self: flex-start;
-}
-
-.card--divider-3 {
-  @include grid-divider(3);
 }
 
 h2.grid-label {
