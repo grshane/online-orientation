@@ -11,6 +11,13 @@
 /web/profiles/contrib/
 /web/private/scripts/quicksilver
 
+# Ignore theme assets
+web/themes/custom/wvuorientation/node_modules/
+web/themes/custom/wvuorientation/build/
+web/themes/custom/wvuorientation/dist/
+
+# Ignore PHPStorm
+/.idea/
 # Ignore scaffold files
 web/.csslintrc
 web/.editorconfig
@@ -30,13 +37,10 @@ web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/update.php
 web/web.config
-web/.ht.router.php
+web/ht.router.php
 
-# Generated files for frontend
-web/themes/custom/wvuidesign/node_modules
-web/themes/custom/wvuidesign/styleguide/kss-assets
-web/themes/custom/wvuidesign/css
-web/libraries
+.DS_Store*
+
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
 
@@ -108,3 +112,4 @@ Thumbs.db
 
 # Things in the core directory that Drupal 8 commits in the repository.
 !web/core/**/*.gz
+.ht.router.php

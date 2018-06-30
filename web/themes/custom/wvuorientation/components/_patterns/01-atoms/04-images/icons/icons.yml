@@ -1,4 +1,13 @@
 items:
   1:
-    name: "Menu"
-    value: "menu"
+    name: "Bars"
+    value: "bars"
+  2:
+    name: "External Link"
+    value: "wvu_external_link"
+  3:
+    name: "External Link Alt(FontAwesome)"
+    value: "wvu_external_link_alt"
+  4:
+    name: "Expand Read More"
+    value: "wvu_read_more"

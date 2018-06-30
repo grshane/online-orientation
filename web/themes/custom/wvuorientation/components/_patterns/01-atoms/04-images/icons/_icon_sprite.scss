@@ -2,13 +2,43 @@
   background: url("svg/sprite.css.svg") no-repeat;
 }
 
-@mixin sprite-menu {
+@mixin sprite-bars {
   @include svg-common;
 
   background-position: 0 0;
 }
 
-.sprite-menu {
-  @include sprite-menu;
+.sprite-bars {
+  @include sprite-bars;
+}
+
+@mixin sprite-wvu_external_link {
+  @include svg-common;
+
+  background-position: 48.30882352941177% 0;
+}
+
+.sprite-wvu_external_link {
+  @include sprite-wvu_external_link;
+}
+
+@mixin sprite-wvu_external_link_alt {
+  @include svg-common;
+
+  background-position: 99.77941176470587% 0;
+}
+
+.sprite-wvu_external_link_alt {
+  @include sprite-wvu_external_link_alt;
+}
+
+@mixin sprite-wvu_read_more {
+  @include svg-common;
+
+  background-position: 0 100%;
+}
+
+.sprite-wvu_read_more {
+  @include sprite-wvu_read_more;
 }
 

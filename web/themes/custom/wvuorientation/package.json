@@ -3,12 +3,15 @@
   "description": "Project template for Drupal 8 themes",
   "version": "1.0.0",
   "devDependencies": {
-    "emulsify-gulp": "fourkitchens/emulsify-gulp",
+    "emulsify-gulp": "fourkitchens/emulsify-gulp#v2.1.0",
     "gulp": "^3.9.1"
   },
   "scripts": {
     "start": "gulp clean && gulp compile && gulp theme",
     "postinstall": "./scripts/pattern_lab.sh && ./scripts/twig_functions.sh"
   },
-  "precommit.silent": true
+  "precommit.silent": true,
+  "dependencies": {
+    "van11y-accessible-hide-show-aria": "^3.0.1"
+  }
 }
