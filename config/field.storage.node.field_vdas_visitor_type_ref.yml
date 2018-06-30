@@ -1,15 +1,16 @@
-uuid: ea1dfae7-e2e3-45a8-b16c-11efcce99baf
+uuid: 0fcbc1c4-a7b2-428b-8d38-a672dc785675
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - taxonomy
 id: node.field_vdas_visitor_type_ref
 field_name: field_vdas_visitor_type_ref
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

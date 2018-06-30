@@ -10,21 +10,29 @@ button:
   spag: false
   vdas: false
   vtyp: false
+  cgro: false
+  rcar: false
 message:
   guide: true
   card: false
   spag: false
   vdas: false
   vtyp: false
+  cgro: false
+  rcar: false
 tab:
   guide: true
   card: false
   spag: false
   vdas: false
   vtyp: false
+  cgro: false
+  rcar: false
 tab_edit:
   guide: true
   card: false
   spag: false
   vdas: false
   vtyp: false
+  cgro: false
+  rcar: false

@@ -1,0 +1,21 @@
+uuid: 81b67f60-5948-41c5-8ded-3726f1af3973
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vdas_body
+    - node.type.vdas
+  module:
+    - text
+id: node.vdas.field_vdas_body
+field_name: field_vdas_body
+entity_type: node
+bundle: vdas
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

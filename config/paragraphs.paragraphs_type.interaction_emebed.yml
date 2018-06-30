@@ -1,9 +1,0 @@
-uuid: 207551be-bbbb-4fd5-b995-ead86104540a
-langcode: en
-status: true
-dependencies: {  }
-id: interaction_emebed
-label: 'Interaction Emebed'
-icon_uuid: null
-description: 'Use for embedding an exported interaction.'
-behavior_plugins: {  }

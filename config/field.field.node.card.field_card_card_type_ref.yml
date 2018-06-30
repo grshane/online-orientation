@@ -1,0 +1,29 @@
+uuid: 0b0cb4af-9083-42e5-aee1-1e9ef48f6b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_card_type_ref
+    - node.type.card
+    - taxonomy.vocabulary.card_type
+id: node.card.field_card_card_type_ref
+field_name: field_card_card_type_ref
+entity_type: node
+bundle: card
+label: 'Card Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      card_type: card_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -17,16 +17,16 @@ third_party_settings:
 id: visitortypemenu
 theme: wvuorientation
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: 'system_menu_block:visitor-type-menu'
 settings:
   id: 'system_menu_block:visitor-type-menu'
-  label: 'What type of student are you?'
+  label: 'Which type of student are you?'
   provider: system
   label_display: visible
   level: 1
-  depth: 0
+  depth: 1
 visibility:
   condition_group:
     id: condition_group

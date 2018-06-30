@@ -1,0 +1,22 @@
+uuid: 8267e680-2a75-4dd2-b8dd-7d21d6433397
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: related_card_alias
+label: 'Related Card Alias'
+type: 'canonical_entities:node'
+pattern: '/[node:field_rcar_card_ref:entity:url:path]/[node:title]'
+selection_criteria:
+  b6040c37-312b-42f3-8e3e-5b0434fee77e:
+    id: node_type
+    bundles:
+      rcar: rcar
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b6040c37-312b-42f3-8e3e-5b0434fee77e
+selection_logic: and
+weight: -5
+relationships: {  }

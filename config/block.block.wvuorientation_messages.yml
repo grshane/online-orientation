@@ -11,7 +11,7 @@ _core:
 id: wvuorientation_messages
 theme: wvuorientation
 region: header
-weight: -3
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

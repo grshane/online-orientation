@@ -1,0 +1,22 @@
+uuid: 8f421d28-cd9c-44ce-a8f2-641567067cf6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: card_alias
+label: 'Card Alias'
+type: 'canonical_entities:node'
+pattern: '/[node:field_card_cgro_ref:entity:field_cgro_vdas_ref]/[node:field_card_cgro_ref:entity:field_cgro_public_title]/[node:title]'
+selection_criteria:
+  4253f02e-b163-4986-b92f-44a45d16fca8:
+    id: node_type
+    bundles:
+      card: card
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4253f02e-b163-4986-b92f-44a45d16fca8
+selection_logic: and
+weight: -5
+relationships: {  }

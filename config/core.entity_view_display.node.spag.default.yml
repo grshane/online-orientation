@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.spag.field_seo_summary
     - field.field.node.spag.field_spag_body
     - node.type.spag
   module:
@@ -14,13 +15,16 @@ bundle: spag
 mode: default
 content:
   field_spag_body:
-    weight: 101
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_seo_summary: true

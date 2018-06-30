@@ -1,0 +1,20 @@
+uuid: dc542950-7e0e-4a1e-beba-863d7a324e14
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_card_card_type_ref
+field_name: field_card_card_type_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

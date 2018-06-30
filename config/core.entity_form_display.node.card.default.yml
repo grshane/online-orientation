@@ -3,31 +3,177 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.card.field_card_type_ref
-    - field.field.node.card.field_card_visitor_type_ref
+    - field.field.node.card.field_card_accordion_body
+    - field.field.node.card.field_card_body
+    - field.field.node.card.field_card_card_type_ref
+    - field.field.node.card.field_card_cgro_ref
+    - field.field.node.card.field_card_external_link
+    - field.field.node.card.field_card_plain_body
+    - field.field.node.card.field_card_rcar_ref
     - node.type.card
+  module:
+    - conditional_fields
+    - inline_entity_form
+    - link
+    - text
 id: node.card.default
 targetEntityType: node
 bundle: card
 mode: default
 content:
-  field_card_type_ref:
+  field_card_accordion_body:
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        2c113395-3f1a-4c30-8768-fea95b762d78:
+          dependee: field_card_card_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: card
+        39235b02-19cb-44c4-aa29-ba8d32f30ef5:
+          dependee: field_card_card_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '12'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: card
+    type: text_textarea_with_summary
+    region: content
+  field_card_body:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        51d9d23a-584f-4fbe-8112-0219e733d2de:
+          dependee: field_card_card_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '11'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: card
+    type: text_textarea
+    region: content
+  field_card_card_type_ref:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_card_visitor_type_ref:
+  field_card_cgro_ref:
     weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_card_external_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        9e72f559-e289-49f6-ada9-49067a24320e:
+          dependee: field_card_card_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '8'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: card
+    type: link_default
+    region: content
+  field_card_plain_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0ea41ee7-fe19-4533-be25-8187f04c3e43:
+          dependee: field_card_card_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '7'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: card
+    type: string_textarea
+    region: content
+  field_card_rcar_ref:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 8
     region: content
     third_party_settings: {  }
   title:

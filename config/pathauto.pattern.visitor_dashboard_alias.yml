@@ -7,16 +7,16 @@ dependencies:
 id: visitor_dashboard_alias
 label: 'Visitor Dashboard Alias'
 type: 'canonical_entities:node'
-pattern: '/visitors/[node:field_vdas_visitor_type_ref]/dashboard'
+pattern: '/[node:field_vdas_visitor_type_ref]'
 selection_criteria:
-  5902e97c-d483-452e-a719-241d42c610c4:
+  c22bed24-931e-476f-9481-cc620544ebf6:
     id: node_type
     bundles:
       vdas: vdas
     negate: false
     context_mapping:
       node: node
-    uuid: 5902e97c-d483-452e-a719-241d42c610c4
+    uuid: c22bed24-931e-476f-9481-cc620544ebf6
 selection_logic: and
 weight: -5
 relationships: {  }
