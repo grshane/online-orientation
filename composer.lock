@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ee9c862c781a8edd45650a9b6d942ae",
+    "content-hash": "a99c2c676866b5e0a7cf05923fed2d7f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2986,6 +2986,73 @@
             }
         },
         {
+            "name": "drupal/draggableviews",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/draggableviews",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/draggableviews-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "007082c2621b45bd8cf73fe5fdd4d292ee88a458"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1477076039",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dixon_",
+                    "homepage": "https://www.drupal.org/user/239911"
+                },
+                {
+                    "name": "ginc",
+                    "homepage": "https://www.drupal.org/user/332249"
+                },
+                {
+                    "name": "iStryker",
+                    "homepage": "https://www.drupal.org/user/303676"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "sevi",
+                    "homepage": "https://www.drupal.org/user/199290"
+                },
+                {
+                    "name": "ygerasimov",
+                    "homepage": "https://www.drupal.org/user/257311"
+                }
+            ],
+            "description": "Complete rewrite of D7 draggableviews",
+            "homepage": "https://www.drupal.org/project/draggableviews",
+            "support": {
+                "source": "http://cgit.drupalcode.org/draggableviews"
+            }
+        },
+        {
             "name": "drupal/dropzonejs",
             "version": "2.0.0-alpha3",
             "source": {
@@ -3636,17 +3703,11 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "1.0.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "e8aa3fae5c3c5dec84644bb577996938d638a611"
+                "reference": "9ab1b9963a07bdefde4829b025a1ea56cb63e03e"
             },
             "require": {
                 "drupal/core": "*"
@@ -3654,19 +3715,17 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1510352885",
+                    "version": "8.x-3.0-beta1+2-dev",
+                    "datestamp": "1523311084",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
-                "patches_applied": {
-                    "patch 36": "https://www.drupal.org/files/issues/field-layout-support-2878359-36.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3698,7 +3757,8 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
+            },
+            "time": "2018-04-09T22:07:48+00:00"
         },
         {
             "name": "drupal/field_permissions",
@@ -6577,12 +6637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fourkitchens/emulsify.git",
-                "reference": "c648321947e2473578bc862ee958aca7a026ed9f"
+                "reference": "e8b81a93ce1be9f59b8e141368fa5f4ff60e0dd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/c648321947e2473578bc862ee958aca7a026ed9f",
-                "reference": "c648321947e2473578bc862ee958aca7a026ed9f",
+                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/e8b81a93ce1be9f59b8e141368fa5f4ff60e0dd7",
+                "reference": "e8b81a93ce1be9f59b8e141368fa5f4ff60e0dd7",
                 "shasum": ""
             },
             "require": {
@@ -6616,7 +6676,7 @@
             ],
             "description": "Project template for Drupal 8 themes",
             "homepage": "http://emulsify.info",
-            "time": "2018-06-19T15:49:28+00:00"
+            "time": "2018-06-28T12:46:57+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -11695,6 +11755,7 @@
         "drupal/conditional_fields": 15,
         "drupal/entity_embed": 10,
         "drupal/entity_share": 15,
+        "drupal/field_group": 20,
         "drupal/field_permissions": 10,
         "drupal/inline_entity_form": 10,
         "drupal/material_admin": 15,
