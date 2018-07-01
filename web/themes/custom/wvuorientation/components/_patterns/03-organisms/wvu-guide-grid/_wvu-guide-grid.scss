@@ -1,6 +1,6 @@
 .card__grid {
-  @include grid;
-  //@include css-grid;
+  //@include grid;
+  @include css-grid;
   @include margin;
 }
 
