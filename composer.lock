@@ -3761,8 +3761,7 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            },
-            "time": "2018-04-09T22:07:48+00:00"
+            }
         },
         {
             "name": "drupal/field_permissions",
