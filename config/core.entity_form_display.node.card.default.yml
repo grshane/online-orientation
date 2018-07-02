@@ -13,8 +13,10 @@ dependencies:
     - node.type.card
   module:
     - conditional_fields
+    - entity_reference_views_select
     - inline_entity_form
     - link
+    - path
     - text
 id: node.card.default
 targetEntityType: node
@@ -99,7 +101,7 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_card_external_link:
     weight: 3
@@ -169,11 +171,17 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -186,7 +194,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  path: true
   promote: true
   sticky: true
   uid: true

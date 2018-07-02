@@ -17,7 +17,7 @@ third_party_settings:
 id: visitortypemenu
 theme: wvuorientation
 region: content
-weight: 1
+weight: 2
 provider: null
 plugin: 'system_menu_block:visitor-type-menu'
 settings:

@@ -1,0 +1,11 @@
+spt_table:
+  -
+    status: '1'
+    pages: "/user\r\n/user*"
+    theme: adminimal_theme
+    roles:
+      administrator: administrator
+      anonymous: 0
+      authenticated: 0
+    weight: '-10'
+    remove: Remove
