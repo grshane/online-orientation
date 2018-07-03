@@ -1,20 +1,17 @@
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
   border-top: 3em solid $wvu-blue;
   background-color: white;
   padding: 1em;
-  margin-bottom: 40px;
   box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.3);
+  align-self: flex-start;
 }
 
 .card__copy {
   min-height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .card__title {
@@ -42,8 +39,6 @@
 .card__body {
   margin: 0.7em 0 1em;
   color: black;
-  margin-bottom: auto;
-  flex-grow: 1;
 }
 
 .card__link {
@@ -98,17 +93,12 @@ svg.external-link__icon {
   width: 100%;
 }
 
-.card__extra {
-  overflow: hidden;
-  transition: max-height 3s cubic-bezier(1, 0, 1, 0); // note that we're transitioning max-height, not height!
-  height: auto;
-  max-height: 9999px; // pump it ALL the way up!
+.card__body-extra {
   color: black;
 }
 
-.card__extra.collapsed {
-  max-height: 0;
-  transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+.button-wrapper {
+  margin-top: auto;
 }
 
 // Variations
@@ -158,7 +148,7 @@ svg.external-link__icon {
   width: 25px;
   fill: currentColor;
   vertical-align: text-top;
-  transition: transform 0.5s ease-in-out 0.5s;
+  transition: transform 0.5s ease;
 
   &:hover {
     color: $wvu-blue;
@@ -166,49 +156,6 @@ svg.external-link__icon {
   }
 }
 
-.is-opened {
-  .read-more__icon {
-    transform: rotate(180deg);
-  }
-}
-
-/* This is the opened state */
-.animated-expandmore__to_expand {
-  overflow: hidden;
-  //transition: max-height 1s cubic-bezier(1, 0, 1, 0); // note that we're transitioning max-height, not height!
-  height: auto;
-  max-height: 999px; // pump it ALL the way up!
-  color: black;
-  display: block;
-  //overflow: hidden;
-  opacity: 1;
-  transition: visibility 0s ease, max-height 1s cubic-bezier(1, 0, 1, 0), opacity 1s ease;
-  //max-height: 9999px;
-
-  /* magic number for max-height = enough height */
-  visibility: visible;
-  transition-delay: 0s;
-}
-
-/* This is the hidden state */
-[data-hidden=true].animated-expandmore__to_expand {
-  display: block;
-  opacity: 0;
-  max-height: 0;
-  transition: max-height 1s cubic-bezier(0, 1, 0, 1);
-  visibility: hidden;
-  transition-delay: max-height 1s;
-}
-
-.animated-expandmore__button {
-  background: none;
-  font-size: inherit;
-  color: inherit;
-  border: none;
-}
-
-.van11y-reverse-flex {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-top: auto;
+[aria-expanded="true"] > .read-more__icon {
+  transform: rotate(180deg);
 }

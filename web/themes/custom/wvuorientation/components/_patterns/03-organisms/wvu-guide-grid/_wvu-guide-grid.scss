@@ -1,21 +1,11 @@
 .card__grid {
-  @include grid;
+  //@include grid;
+  @include css-grid;
   @include margin;
 }
 
-.card--grid-item {
-  @include grid-item(3);
-
-  align-self: flex-start;
-}
-
-.card--divider-3 {
-  @include grid-divider(3);
-}
-
 h2.grid-label {
-  color: #002855;
-  font-family: HelveticaNeueW01-97Blac,Helvetica Neue,Helvetica,Helvetica LT Std,Helvetica CY,Arial,Lucida Grande,sans-serif;
+  color: $wvu-blue;
   font-weight: 100;
   font-size: 3.5rem;
   font-style: normal;

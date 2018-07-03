@@ -1,0 +1,24 @@
+{% set grid_base_class = grid_base_class|default('css-grid') %}
+
+{% if grid_label %}
+  {% include "@atoms/02-text/00-headings/_heading.twig" with {
+    "heading_base_class": 'grid-label h2',
+    "heading_level": 2,
+    "heading": grid_label
+  } %}
+{% endif %}
+{% if grid_sublabel_body %}
+  {% include "@atoms/02-text/text/01-paragraph.twig" with {
+    "paragraph_content": grid_sublabel_body,
+    "paragraph_blockname": grid_sublabel_body_base_class|default(grid_sublabel_base_class),
+    "paragraph_modifiers": grid_sublabel_body_modifiers,
+    "paragraph_base_class": grid_sublabel_body_base_class|default('grid-sublabel'),
+  } %}
+{% endif %}
+<div {{ bem(grid_base_class, (grid_modifiers), grid_blockname) }}>
+  {% block grid_content %}
+    {% for item in items %}
+      <div class="css-grid__item">{{ item }}</div>
+    {% endfor %}
+  {% endblock %}
+</div>

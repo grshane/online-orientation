@@ -6,8 +6,6 @@ grid_blockname:
   card
 cards:
   1:
-   card_modifiers:
-      1: "grid-item"
    # Title
    card_title:
      'Getting started: claiming your account'
@@ -37,8 +35,7 @@ cards:
      'Claim Your Account'
   2:
     card_modifiers:
-      1: "grid-item"
-      2: "expand-card"
+      1: "expand-card"
 
     card_extra_content:
       true
@@ -74,8 +71,6 @@ cards:
       'Read more'
 
   3:
-    card_modifiers:
-      1: "grid-item"
     card_external_link:
       true
 
@@ -106,8 +101,7 @@ cards:
 
   4:
    card_modifiers:
-     1: "grid-item"
-     2: "multiple"
+     1: "multiple"
 
    # Title
    card_title:
@@ -131,8 +125,6 @@ cards:
    card_button_content:
      'Expand'
   5:
-   card_modifiers:
-      1: "grid-item"
    # Title
    card_title:
      'Getting started: claiming your account'
@@ -162,8 +154,7 @@ cards:
      'Claim Your Account'
   6:
     card_modifiers:
-      1: "grid-item"
-      2: "expand-card"
+      1: "expand-card"
 
     card_extra_content:
       true
@@ -201,8 +192,6 @@ cards:
       'Read more'
 
   7:
-    card_modifiers:
-      1: "grid-item"
     card_external_link:
       true
 
@@ -233,8 +222,7 @@ cards:
 
   8:
    card_modifiers:
-     1: "grid-item"
-     2: "multiple"
+     1: "multiple"
 
    # Title
    card_title:
