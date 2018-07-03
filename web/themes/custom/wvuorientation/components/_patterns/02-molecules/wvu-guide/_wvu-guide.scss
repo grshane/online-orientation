@@ -1,0 +1,161 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+  border-top: 3em solid $wvu-blue;
+  background-color: white;
+  padding: 1em;
+  box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.3);
+  align-self: flex-start;
+}
+
+.card__copy {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  @include heading-xl($font-size: 2rem, $color: $wvu-blue);
+  @include no-bottom;
+
+  text-transform: uppercase;
+
+  &-link {
+    @include link;
+  }
+}
+
+.serial {
+  @include heading-xl($font-size: 2rem, $color: $wvu-blue);
+}
+
+.card__subtitle {
+  @include heading-medium($font-size: 1rem);
+  @include no-bottom;
+
+  color: $gray;
+}
+
+.card__body {
+  margin: 0.7em 0 1em;
+  color: black;
+}
+
+.card__link {
+  @include link;
+}
+
+.card__button {
+  @include button;
+
+  border-radius: 5px;
+  background-color: $wvu-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 80%;
+  height: 3em;
+  text-transform: initial;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: $wvu-gold;
+
+  &:visited {
+    color: $wvu-gold;
+  }
+
+  &:hover {
+    background-color: $wvu-gold;
+    color: $wvu-blue;
+  }
+}
+
+.card__external_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 25px;
+  transform: translate(-20%, -140%);
+  height: 1em;
+  width: 1em;
+}
+
+.title_serial {
+  display: flex;
+  justify-content: space-between;
+}
+
+svg.external-link__icon {
+  fill: white;
+  height: 100%;
+  width: 100%;
+}
+
+.card__body-extra {
+  color: black;
+}
+
+.button-wrapper {
+  margin-top: auto;
+}
+
+// Variations
+.card--bg {
+  background-color: $white;
+  padding: 1em;
+}
+
+.card--multiple {
+  /*
+  box-shadow:
+    0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.3),
+    0 0.75em 0 -0.25em #d0d0d0,
+    0 0.75em 0.1875em -0.25em rgba(0, 0, 0, 0.3),
+    0 1.5em 0 -0.5em #b1b1b1,
+    0 1.5em 0.1875em -0.5em rgba(0, 0, 0, 0.3);
+  */
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &::before {
+    bottom: -5px;
+    left: 5px;
+    right: 5px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+
+  &::after {
+    bottom: -10px;
+    left: 10px;
+    right: 10px;
+    background-color: #bbb;
+    z-index: -2;
+  }
+}
+
+.read-more__icon {
+  height: 1em;
+  width: 25px;
+  fill: currentColor;
+  vertical-align: text-top;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    color: $wvu-blue;
+    background-color: $wvu-gold;
+  }
+}
+
+[aria-expanded="true"] > .read-more__icon {
+  transform: rotate(180deg);
+}

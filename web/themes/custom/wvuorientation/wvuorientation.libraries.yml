@@ -16,3 +16,19 @@ main_menu:
     components/_patterns/02-molecules/menus/main-menu/main-menu.js: {}
   dependencies:
     - core/drupal
+
+sprite:
+  js:
+    components/js/svgxuse.min.js: { attributes: { defer: true } }
+
+expand:
+  js:
+    node_modules/bootstrap.native/dist/bootstrap-native-v4.js: {}
+#   node_modules/requirejs/require.js: { attributes: { data-main: "/themes/custom/wvuorientation/requirejs/requirejs-config.js?1" } }
+
+#fonts:
+#  js:
+#    https://fast.fonts.net/jsapi/36d8cd92-7cc7-499b-b169-0eed9d670283.js: { type: external, minified: true }
+#  css:
+#    theme:
+#    https://fast.fonts.net/cssapi/36d8cd92-7cc7-499b-b169-0eed9d670283.css: { type: external, minified: true }

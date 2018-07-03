@@ -1,0 +1,247 @@
+grid_label:
+  "Your're admitted, now what?"
+grid_sublabel_body:
+  "Students will receive an admittance letter that contains their WVU ID number and user name."
+grid_blockname:
+  card
+cards:
+  1:
+   # Title
+   card_title:
+     'Getting started: claiming your account'
+
+   card_serial_number:
+     '1'
+
+   # Body
+   card_body:
+     "Students will need to claim their accounts by
+      visiting,
+      http://login.wvu.edu
+       and clicking
+      Claim Account. Follow the directions. If you
+      don’t know your WVU ID you can look it up
+      by clicking the link at the top: Self-Service
+      Tools, and then click: Forgot your WVUID.
+      Once you have claimed your account, write
+      down your log in information and password."
+   card_body_modifiers:
+   card_body_blockname:
+
+   # Button
+   card_button_url:
+     'https://www.wvu.edu/'
+   card_button_content:
+     'Claim Your Account'
+  2:
+    card_modifiers:
+      1: "expand-card"
+
+    card_extra_content:
+      true
+
+    # Title
+    card_title:
+      'Getting started: claiming your account'
+
+    card_serial_number:
+      '3'
+
+    # Body
+    card_body:
+      "Students will need to claim their accounts by
+       visiting,
+       http://login.wvu.edu
+        and clicking
+       Claim Account. Follow the directions. If you
+       don’t know your WVU ID you can look it up
+       by clicking the link at the top: Self-Service
+       Tools, and then click: Forgot your WVUID.
+       Once you have claimed your account, write
+       down your log in information and password."
+
+    card_body_extra:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis suscipit odio, eu aliquam odio. Sed laoreet varius ante in ultricies. Nulla et tincidunt odio, sed laoreet tellus. Praesent fermentum mi ligula, in maximus nunc finibus id. Mauris risus elit, efficitur ullamcorper tempor eu, tristique a dui. Nam nec commodo magna. Vestibulum mattis dolor ante, vitae suscipit justo malesuada ut. Duis finibus, justo eu faucibus lacinia, tellus ipsum rhoncus turpis, eget finibus eros elit eget ante. Morbi quis venenatis mauris, in dignissim est. Pellentesque id erat ut mauris sollicitudin placerat id vel magna. Maecenas feugiat volutpat erat, at aliquam tortor. Sed vitae malesuada ipsum. Aenean erat quam, luctus in hendrerit eu, efficitur et lectus. Etiam magna eros, fringilla ut viverra ac, aliquet sit amet eros. Aenean ut turpis dapibus, ullamcorper risus vitae, condimentum justo. Suspendisse id suscipit lectus."
+
+    card_body_modifiers:
+    card_body_blockname:
+
+    # Button
+    card_button_content:
+      'Read more'
+
+  3:
+    card_external_link:
+      true
+
+    # Title
+    card_title:
+      'TWO-FACTOR AUTHENTICATION'
+
+    card_serial_number:
+      '3'
+
+    # Body
+    card_body:
+      "Starting fall semester 2018, all students will
+       be enrolled in Duo two-factor authentication.
+       Two-factor authentication secures your ac-
+       count by confirming your identity in two ways
+       – with something you KNOW (your Login
+       password) and something you HAVE (an app
+       on your smartphone/tablet or display token)."
+    card_body_modifiers:
+    card_body_blockname:
+
+    # Button
+    card_button_url:
+      'https://www.wvu.edu/'
+    card_button_content:
+      'Enroll in Two-Factor'
+
+  4:
+   card_modifiers:
+     1: "multiple"
+
+   # Title
+   card_title:
+     'How to register'
+
+   card_serial_number:
+     '7'
+
+   # Body
+   card_body:
+     "Once logged into the Portal, click on STAR,
+      click on the Student Services and Housing
+      Tab and then Registration to add/drop cours-
+      es, view schedule etc…."
+   card_body_modifiers:
+   card_body_blockname:
+
+   # Button
+   card_button_url:
+     'https://www.wvu.edu/'
+   card_button_content:
+     'Expand'
+  5:
+   # Title
+   card_title:
+     'Getting started: claiming your account'
+
+   card_serial_number:
+     '1'
+
+   # Body
+   card_body:
+     "Students will need to claim their accounts by
+      visiting,
+      http://login.wvu.edu
+       and clicking
+      Claim Account. Follow the directions. If you
+      don’t know your WVU ID you can look it up
+      by clicking the link at the top: Self-Service
+      Tools, and then click: Forgot your WVUID.
+      Once you have claimed your account, write
+      down your log in information and password."
+   card_body_modifiers:
+   card_body_blockname:
+
+   # Button
+   card_button_url:
+     'https://www.wvu.edu/'
+   card_button_content:
+     'Claim Your Account'
+  6:
+    card_modifiers:
+      1: "expand-card"
+
+    card_extra_content:
+      true
+
+    # Title
+    card_title:
+      'Getting started: claiming your account'
+
+    card_serial_number:
+      '3'
+
+    # Body
+    card_body:
+      "Students will need to claim their accounts by
+       visiting,
+       http://login.wvu.edu
+        and clicking
+       Claim Account. Follow the directions. If you
+       don’t know your WVU ID you can look it up
+       by clicking the link at the top: Self-Service
+       Tools, and then click: Forgot your WVUID.
+       Once you have claimed your account, write
+       down your log in information and password."
+
+    card_body_extra:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis suscipit odio, eu aliquam odio. Sed laoreet varius ante in ultricies. Nulla et tincidunt odio, sed laoreet tellus. Praesent fermentum mi ligula, in maximus nunc finibus id. Mauris risus elit, efficitur ullamcorper tempor eu, tristique a dui. Nam nec commodo magna. Vestibulum mattis dolor ante, vitae suscipit justo malesuada ut. Duis finibus, justo eu faucibus lacinia, tellus ipsum rhoncus turpis, eget finibus eros elit eget ante. Morbi quis venenatis mauris, in dignissim est. Pellentesque id erat ut mauris sollicitudin placerat id vel magna. Maecenas feugiat volutpat erat, at aliquam tortor. Sed vitae malesuada ipsum. Aenean erat quam, luctus in hendrerit eu, efficitur et lectus. Etiam magna eros, fringilla ut viverra ac, aliquet sit amet eros. Aenean ut turpis dapibus, ullamcorper risus vitae, condimentum justo. Suspendisse id suscipit lectus."
+
+    card_body_modifiers:
+    card_body_blockname:
+
+    # Button
+    card_button_url:
+      '#'
+    card_button_content:
+      'Read more'
+
+  7:
+    card_external_link:
+      true
+
+    # Title
+    card_title:
+      'TWO-FACTOR AUTHENTICATION'
+
+    card_serial_number:
+      '3'
+
+    # Body
+    card_body:
+      "Starting fall semester 2018, all students will
+       be enrolled in Duo two-factor authentication.
+       Two-factor authentication secures your ac-
+       count by confirming your identity in two ways
+       – with something you KNOW (your Login
+       password) and something you HAVE (an app
+       on your smartphone/tablet or display token)."
+    card_body_modifiers:
+    card_body_blockname:
+
+    # Button
+    card_button_url:
+      'https://www.wvu.edu/'
+    card_button_content:
+      'Enroll in Two-Factor'
+
+  8:
+   card_modifiers:
+     1: "multiple"
+
+   # Title
+   card_title:
+     'How to register'
+
+   card_serial_number:
+     '7'
+
+   # Body
+   card_body:
+     "Once logged into the Portal, click on STAR,
+      click on the Student Services and Housing
+      Tab and then Registration to add/drop cours-
+      es, view schedule etc…."
+   card_body_modifiers:
+   card_body_blockname:
+
+   # Button
+   card_button_url:
+     'https://www.wvu.edu/'
+   card_button_content:
+     'Expand'
