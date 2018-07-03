@@ -1,9 +1,0 @@
-uuid: 4a15d5b8-0d40-463f-a141-fce59249e7bd
-langcode: en
-status: true
-dependencies: {  }
-id: video_embed
-label: 'Video Embed'
-icon_uuid: null
-description: 'Use this to embed videos from a third party service'
-behavior_plugins: {  }

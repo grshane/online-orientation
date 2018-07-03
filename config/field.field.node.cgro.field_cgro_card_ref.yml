@@ -1,0 +1,28 @@
+uuid: 3cbee865-8bee-4b42-b38d-926cbea5ac2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cgro_card_ref
+    - node.type.card
+    - node.type.cgro
+id: node.cgro.field_cgro_card_ref
+field_name: field_cgro_card_ref
+entity_type: node
+bundle: cgro
+label: Card
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      card: card
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

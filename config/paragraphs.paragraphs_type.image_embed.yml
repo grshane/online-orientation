@@ -1,9 +1,0 @@
-uuid: 9cc5eebf-3dbe-4222-8ff7-030f89ff5fde
-langcode: en
-status: true
-dependencies: {  }
-id: image_embed
-label: 'Image Embed'
-icon_uuid: null
-description: 'Use to display an image'
-behavior_plugins: {  }

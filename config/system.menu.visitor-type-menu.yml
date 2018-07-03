@@ -1,0 +1,8 @@
+uuid: 4883288a-c2b5-461f-ad59-41b475fdc8c6
+langcode: en
+status: true
+dependencies: {  }
+id: visitor-type-menu
+label: 'Visitor Type Menu'
+description: ''
+locked: false

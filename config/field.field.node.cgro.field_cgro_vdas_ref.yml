@@ -1,0 +1,29 @@
+uuid: 76bb9427-f5d3-4f7a-bf08-deca09d2b372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cgro_vdas_ref
+    - node.type.cgro
+    - node.type.vdas
+id: node.cgro.field_cgro_vdas_ref
+field_name: field_cgro_vdas_ref
+entity_type: node
+bundle: cgro
+label: 'Parent Visitor Dashboard'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vdas: vdas
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,4 +1,4 @@
-uuid: c32b40ab-a3ab-40a8-bcb8-f0ffdc671c0b
+uuid: 74268f3c-9c3d-44de-a57b-026ef37ee23e
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: adminimal_theme_content
 theme: adminimal_theme
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

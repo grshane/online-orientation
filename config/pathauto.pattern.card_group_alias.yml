@@ -1,0 +1,22 @@
+uuid: 75896b23-7f67-45db-aa98-40f2bccddf2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: card_group_alias
+label: 'Card Group Alias'
+type: 'canonical_entities:node'
+pattern: '[node:field_cgro_vdas_ref]/[node:field_cgro_public_title]'
+selection_criteria:
+  a4824869-e5c4-4cca-80be-0bc086f6db05:
+    id: node_type
+    bundles:
+      cgro: cgro
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a4824869-e5c4-4cca-80be-0bc086f6db05
+selection_logic: and
+weight: -5
+relationships: {  }

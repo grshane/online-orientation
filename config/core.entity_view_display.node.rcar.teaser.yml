@@ -1,0 +1,18 @@
+uuid: 90973999-1d8a-43e3-9162-f68a5f942dbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.rcar
+  module:
+    - user
+id: node.rcar.teaser
+targetEntityType: node
+bundle: rcar
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

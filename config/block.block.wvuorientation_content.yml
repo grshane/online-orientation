@@ -1,4 +1,4 @@
-uuid: 27f90a29-2b6b-4979-aee0-393d1f171249
+uuid: 338a9146-2c82-409e-afc1-b3b5e0fb2962
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: wvuorientation_content
 theme: wvuorientation
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:

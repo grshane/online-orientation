@@ -1,0 +1,30 @@
+uuid: 6e709870-d635-4c31-b82c-13db9a54e47e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rcar.field_rcar_body
+    - field.field.node.rcar.field_rcar_card_ref
+    - node.type.rcar
+  module:
+    - text
+    - user
+id: node.rcar.default
+targetEntityType: node
+bundle: rcar
+mode: default
+content:
+  field_rcar_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_rcar_card_ref: true

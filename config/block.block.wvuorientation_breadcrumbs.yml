@@ -1,4 +1,4 @@
-uuid: 45bc45b2-3172-40ad-b0c5-c1b76cb3a75e
+uuid: 8df494dc-2912-426c-a33e-99a658859299
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: wvuorientation_breadcrumbs
 theme: wvuorientation
-region: header
-weight: 0
+region: content
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:

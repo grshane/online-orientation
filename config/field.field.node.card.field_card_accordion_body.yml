@@ -1,0 +1,22 @@
+uuid: 426d4ce9-8ea0-41a1-aa50-0734397c1935
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_accordion_body
+    - node.type.card
+  module:
+    - text
+id: node.card.field_card_accordion_body
+field_name: field_card_accordion_body
+entity_type: node
+bundle: card
+label: 'Accordion Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

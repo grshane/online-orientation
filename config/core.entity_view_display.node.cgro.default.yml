@@ -1,0 +1,43 @@
+uuid: a9af71aa-48b0-4772-9b2b-c5f4100f90f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cgro.field_cgro_body
+    - field.field.node.cgro.field_cgro_card_ref
+    - field.field.node.cgro.field_cgro_new_students
+    - field.field.node.cgro.field_cgro_public_title
+    - field.field.node.cgro.field_cgro_vdas_ref
+    - node.type.cgro
+  module:
+    - text
+    - user
+id: node.cgro.default
+targetEntityType: node
+bundle: cgro
+mode: default
+content:
+  field_cgro_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cgro_card_ref:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cgro_new_students: true
+  field_cgro_public_title: true
+  field_cgro_vdas_ref: true

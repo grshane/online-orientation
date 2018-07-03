@@ -1,0 +1,19 @@
+uuid: 1ce0f845-7ae7-4a12-a935-b9baba340a12
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: visitor_dashboard_path
+label: 'Visitor Dashboard Path'
+logic: or
+conditions:
+  06b4726f-da49-4c3b-82c9-3165447f0d95:
+    id: 'entity_bundle:node'
+    bundles:
+      vdas: vdas
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 06b4726f-da49-4c3b-82c9-3165447f0d95
+allow_other_conditions: false

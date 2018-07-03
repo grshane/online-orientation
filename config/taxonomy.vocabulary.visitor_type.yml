@@ -1,0 +1,9 @@
+uuid: 0338c363-5b56-47de-93b5-96b74b4cd9a3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Visitor Type'
+vid: visitor_type
+description: ''
+hierarchy: 0
+weight: 0

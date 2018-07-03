@@ -1,0 +1,22 @@
+uuid: e291b0b5-9fd5-4189-9855-7d854d2aec60
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visitor_type
+id: taxonomy_term.visitor_type.default
+targetEntityType: taxonomy_term
+bundle: visitor_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
