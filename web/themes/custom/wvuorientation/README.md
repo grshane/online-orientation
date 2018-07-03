@@ -15,24 +15,28 @@ Component-driven prototyping tool using [Pattern Lab v2](http://patternlab.io/) 
 wvu-orientation supports both NPM and YARN.
 
 Install with NPM:
-`composer create-project fourkitchens/wvuorientation --stability dev --no-interaction wvuorientation && cd wvuorientation && npm install`
+`composer create-project fourkitchens/wvuorientation:^2.0 --stability dev --no-interaction wvuorientation && cd wvuorientation && npm install`
 
 Install with Yarn:
-`composer create-project fourkitchens/wvuorientation --stability dev --no-interaction wvuorientation && cd wvuorientation && yarn install`
+`composer create-project fourkitchens/wvuorientation:^2.0 --stability dev --no-interaction wvuorientation && cd wvuorientation && yarn install`
 
 ## Drupal-specific installation
 
 ### In a Composer-based Drupal install (recommended)
 
-  1. `composer require fourkitchens/wvuorientation`
-  2. Enable wvu-orientation and its dependencies `drush en wvuorientation components unified_twig_ext -y`
-  3. **Optional**: Create cloned theme `drush wvuorientation "THEME NAME"` (You may need to run `drush cc drush` to clear the drush cache. Also, you can run `drush help wvuorientation` for other available options)
-  4. If you created a cloned theme, `cd web/themes/custom/THEME_NAME/`. If not, `cd web/themes/contrib/wvuorientation/`
-  5. `npm install` or `yarn install`
+1. Require wvuorientation in your project `composer require fourkitchens/wvuorientation`
+2. Move into the original wvuorientation theme `cd web/themes/contrib/wvuorientation/`
+3. Create your new theme by cloning wvuorientation `php wvuorientation.php "THEME NAME"` (Run `php wvuorientation.php -h` for other available options)
+4. Move into your theme directory `cd web/themes/custom/THEME_NAME/`
+5. Install the theme dependencies `npm install` or `yarn install`
+6. Enable your theme and its dependencies `drush then THEME_NAME -y && drush en components unified_twig_ext -y`
+7. Proceed to the "Starting Pattern Lab…" section below
 
 If you're not using a Composer-based Drupal install (e.g. tarball download from drupal.org) installation [instructions can be found on the Wiki](https://github.com/fourkitchens/wvuorientation/wiki/Installation).
 
 Troubleshooting Installation: See [Drupal Installation FAQ](https://github.com/fourkitchens/wvuorientation/wiki/Installation#drupal-installation-faq).
+
+_Note: Once you've created your custom theme, you can remove wvuorientation as a dependency of your project. If you'd like to get updates as we push them, solely for educational/best-practice information, feel free to leave it in and receive the updates. Updating wvuorientation will not affect your custom theme in any way._
 
 ## Starting Pattern Lab and watch task
 
