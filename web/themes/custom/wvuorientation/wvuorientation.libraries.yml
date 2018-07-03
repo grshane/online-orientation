@@ -15,9 +15,8 @@ sprite:
 
 expand:
   js:
-    node_modules/requirejs/require.js: { attributes: { data-main: "/themes/custom/wvuorientation/requirejs/requirejs-config.js?1" } }
-#    node_modules/requirejs/require.js: { attributes: { data-main: "/themes/custom/wvuorientation/components/js/requirejs-config.js?1" } }
-
+    node_modules/bootstrap.native/dist/bootstrap-native-v4.js: {}
+#   node_modules/requirejs/require.js: { attributes: { data-main: "/themes/custom/wvuorientation/requirejs/requirejs-config.js?1" } }
 
 #fonts:
 #  js:

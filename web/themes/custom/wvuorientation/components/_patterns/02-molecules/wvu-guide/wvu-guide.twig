@@ -90,7 +90,7 @@
     } %}
   {% endif %}
   {% if card_extra_content %}
-    <div class="fade collapse in" id="collapse-{{ card_serial_number }}" aria-expanded="false" role="presentation" style="">
+    <div class="collapse" id="collapse-{{ card_serial_number }}" aria-expanded="false" role="presentation" style="">
       {% include "@atoms/02-text/text/01-paragraph.twig" with {
           "paragraph_content": card_body_extra,
           "paragraph_blockname": card_body_base_class|default(card_base_class),
