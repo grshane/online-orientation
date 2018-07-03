@@ -1,0 +1,64 @@
+uuid: d0baf288-26b2-441f-94fe-a79af89a8fc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.card.field_card_accordion_body
+    - field.field.node.card.field_card_body
+    - field.field.node.card.field_card_card_type_ref
+    - field.field.node.card.field_card_cgro_ref
+    - field.field.node.card.field_card_external_link
+    - field.field.node.card.field_card_plain_body
+    - field.field.node.card.field_card_rcar_ref
+    - node.type.card
+  module:
+    - link
+    - text
+    - user
+id: node.card.default
+targetEntityType: node
+bundle: card
+mode: default
+content:
+  field_card_accordion_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_card_body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_card_external_link:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_card_plain_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_card_card_type_ref: true
+  field_card_cgro_ref: true
+  field_card_rcar_ref: true

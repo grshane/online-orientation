@@ -1,9 +1,0 @@
-uuid: eb3168a3-598e-4324-b706-0f10f616d6d9
-langcode: en
-status: true
-dependencies: {  }
-name: 'Student Bucket'
-vid: bucket
-description: 'Used for classifying guides for each student type.'
-hierarchy: 0
-weight: 0

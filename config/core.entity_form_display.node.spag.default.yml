@@ -1,0 +1,58 @@
+uuid: a27e1808-c08c-4b00-ade2-7bbf0d50a4fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spag.field_seo_summary
+    - field.field.node.spag.field_spag_body
+    - node.type.spag
+  module:
+    - path
+    - text
+id: node.spag.default
+targetEntityType: node
+bundle: spag
+mode: default
+content:
+  field_seo_summary:
+    weight: 1
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_spag_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

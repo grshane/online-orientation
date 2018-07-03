@@ -1,0 +1,19 @@
+uuid: 156e23fa-9ebd-4966-99c0-79ddc6fc5617
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: card_path
+label: 'Card Path'
+logic: or
+conditions:
+  2c589d4e-8bbf-44c2-93a9-422a374082b4:
+    id: 'entity_bundle:node'
+    bundles:
+      card: card
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 2c589d4e-8bbf-44c2-93a9-422a374082b4
+allow_other_conditions: false

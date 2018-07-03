@@ -1,0 +1,19 @@
+uuid: 48537c59-019d-401f-91b0-89afa9898583
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.vdas
+  module:
+    - user
+id: node.vdas.teaser
+targetEntityType: node
+bundle: vdas
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_vdas_visitor_type_ref: true

@@ -1,0 +1,65 @@
+uuid: 545e004b-eb25-42cb-a488-48b76c281e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vdas.field_seo_summary
+    - field.field.node.vdas.field_vdas_body
+    - field.field.node.vdas.field_vdas_visitor_type_ref
+    - node.type.vdas
+  module:
+    - path
+    - text
+id: node.vdas.default
+targetEntityType: node
+bundle: vdas
+mode: default
+content:
+  field_seo_summary:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_vdas_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_vdas_visitor_type_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

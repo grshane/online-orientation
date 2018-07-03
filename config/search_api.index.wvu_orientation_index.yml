@@ -1,0 +1,184 @@
+uuid: f4ab9f79-6ccf-4a35-9d27-78ab78ccf2cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cgro_body
+    - field.storage.node.field_spag_body
+    - field.storage.node.field_vdas_body
+    - field.storage.node.field_cgro_card_ref
+    - field.storage.node.field_cgro_public_title
+    - search_api.server.wvu_orientation
+  module:
+    - search_api
+    - node
+id: wvu_orientation_index
+name: 'WVU Orientation Index'
+description: ''
+read_only: false
+field_settings:
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+  field_cgro_body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: field_cgro_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_cgro_body
+  field_spag_body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: field_spag_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_spag_body
+  field_vdas_body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: field_vdas_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_vdas_body
+  field_vdas_body_1:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: field_vdas_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_vdas_body
+  field_cgro_card_ref:
+    label: Card
+    datasource_id: 'entity:node'
+    property_path: field_cgro_card_ref
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_cgro_card_ref
+  field_cgro_card_ref_1:
+    label: Card
+    datasource_id: 'entity:node'
+    property_path: field_cgro_card_ref
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_cgro_card_ref
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  type_1:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  field_cgro_public_title:
+    label: 'Public Title'
+    datasource_id: 'entity:node'
+    property_path: field_cgro_public_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_cgro_public_title
+  field_cgro_public_title_1:
+    label: 'Public Title'
+    datasource_id: 'entity:node'
+    property_path: field_cgro_public_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_cgro_public_title
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  title_1:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  status:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - card
+        - cgro
+        - rcar
+        - spag
+        - vdas
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  rendered_item: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: true
+    fields:
+      - url
+      - field_cgro_body
+      - field_spag_body
+      - field_vdas_body
+      - field_vdas_body_1
+      - field_cgro_card_ref
+      - field_cgro_card_ref_1
+      - type
+      - type_1
+      - field_cgro_public_title
+      - field_cgro_public_title_1
+      - title
+      - title_1
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  add_url: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: wvu_orientation

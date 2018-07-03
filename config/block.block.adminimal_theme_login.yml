@@ -1,4 +1,4 @@
-uuid: 2105c0cb-e514-4b95-8d58-9a1b6f53cedb
+uuid: 0eda172c-1f87-4bc1-a375-8e1d679b34e8
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: adminimal_theme_login
 theme: adminimal_theme
 region: content
-weight: 10
+weight: -4
 provider: null
 plugin: user_login_block
 settings:

@@ -1,9 +1,0 @@
-uuid: efa40abe-7803-40b9-875b-a2938569ef1d
-langcode: en
-status: true
-dependencies: {  }
-id: link_list
-label: 'Link List'
-icon_uuid: null
-description: 'Use for a list of links both internal or external'
-behavior_plugins: {  }

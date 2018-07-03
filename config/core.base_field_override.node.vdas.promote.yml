@@ -1,0 +1,22 @@
+uuid: d1d06400-db3a-4413-a072-a20a59f4351b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vdas
+id: node.vdas.promote
+field_name: promote
+entity_type: node
+bundle: vdas
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

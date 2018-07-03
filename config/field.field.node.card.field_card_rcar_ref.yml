@@ -1,0 +1,28 @@
+uuid: efdd882f-3c52-46ca-8a0f-f95c1b41e7a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_rcar_ref
+    - node.type.card
+    - node.type.rcar
+id: node.card.field_card_rcar_ref
+field_name: field_card_rcar_ref
+entity_type: node
+bundle: card
+label: 'Related Card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      rcar: rcar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,4 +1,4 @@
-uuid: 671ca88b-f52f-4ffd-8ff5-32b4fff7df12
+uuid: 274f7f0b-bff3-4009-8766-52123c92bb55
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: wvuorientation_local_actions
 theme: wvuorientation
 region: content
-weight: -20
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

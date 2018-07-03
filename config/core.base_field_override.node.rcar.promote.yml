@@ -1,0 +1,22 @@
+uuid: 707ab3cf-0a69-479a-9be6-8f902cac2bfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rcar
+id: node.rcar.promote
+field_name: promote
+entity_type: node
+bundle: rcar
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
