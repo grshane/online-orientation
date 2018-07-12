@@ -1,15 +1,15 @@
-uuid: d450510f-1d96-4c04-a134-bc9a68587e09
+uuid: 870e521e-dcfc-4c53-9867-e120a9da1043
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_rcar_card_ref
-field_name: field_rcar_card_ref
+id: node.field_card_summary
+field_name: field_card_summary
 entity_type: node
-type: entity_reference
+type: string_long
 settings:
-  target_type: node
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

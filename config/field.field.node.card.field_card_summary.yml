@@ -1,15 +1,15 @@
-uuid: 56751262-51ad-4e36-af54-3d1bd055e093
+uuid: d1e1c68b-4b83-4ab0-9ea7-deddce52cbd6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_card_plain_body
+    - field.storage.node.field_card_summary
     - node.type.card
-id: node.card.field_card_plain_body
-field_name: field_card_plain_body
+id: node.card.field_card_summary
+field_name: field_card_summary
 entity_type: node
 bundle: card
-label: 'Plain Body'
+label: 'Card Summary'
 description: ''
 required: false
 translatable: false

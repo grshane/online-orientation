@@ -1,0 +1,19 @@
+uuid: 53992e2e-0db5-4963-8e5c-2a8af79612d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: card_group_path
+label: 'Card Group Path'
+logic: or
+conditions:
+  4467d1cc-c124-41f5-8006-1afee185933d:
+    id: 'entity_bundle:node'
+    bundles:
+      cgro: cgro
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 4467d1cc-c124-41f5-8006-1afee185933d
+allow_other_conditions: false

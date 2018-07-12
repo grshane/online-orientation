@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.cgro.field_cgro_body
     - field.field.node.cgro.field_cgro_card_ref
+    - field.field.node.cgro.field_cgro_link_or_card
     - field.field.node.cgro.field_cgro_new_students
     - field.field.node.cgro.field_cgro_public_title
     - field.field.node.cgro.field_cgro_vdas_ref
@@ -24,20 +25,14 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_cgro_card_ref:
-    weight: 2
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_cgro_card_ref: true
+  field_cgro_link_or_card: true
   field_cgro_new_students: true
   field_cgro_public_title: true
   field_cgro_vdas_ref: true

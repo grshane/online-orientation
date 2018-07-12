@@ -1,16 +1,17 @@
-uuid: 6e8a514d-144e-4189-a9be-bb677bfad773
+uuid: f317d4de-ee18-44e7-b45c-6564916b5962
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - text
-id: node.field_rcar_body
-field_name: field_rcar_body
+id: node.field_media_test
+field_name: field_media_test
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

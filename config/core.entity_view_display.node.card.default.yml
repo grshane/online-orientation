@@ -8,8 +8,9 @@ dependencies:
     - field.field.node.card.field_card_card_type_ref
     - field.field.node.card.field_card_cgro_ref
     - field.field.node.card.field_card_external_link
-    - field.field.node.card.field_card_plain_body
     - field.field.node.card.field_card_rcar_ref
+    - field.field.node.card.field_card_summary
+    - field.field.node.card.field_media_test
     - node.type.card
   module:
     - link
@@ -21,22 +22,24 @@ bundle: card
 mode: default
 content:
   field_card_accordion_body:
-    weight: 2
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_card_body:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_card_external_link:
-    weight: 4
-    label: above
+    type: link
+    weight: 3
+    region: content
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -44,11 +47,9 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
-    region: content
-  field_card_plain_body:
-    weight: 1
-    label: hidden
+  field_card_summary:
+    weight: 4
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
@@ -62,3 +63,4 @@ hidden:
   field_card_card_type_ref: true
   field_card_cgro_ref: true
   field_card_rcar_ref: true
+  field_media_test: true
