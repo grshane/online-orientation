@@ -1,16 +1,16 @@
 # Breakpoints - change based on site need
-wvuorientation.large:
-  label: large
-  mediaQuery: 'all and (min-width: 61.25em)'
-wvuorientation.medium:
-  label: medium
-  mediaQuery: 'all and (min-width: 48em)'
-wvuorientation.small-large:
-  label: small-large
-  mediaQuery: 'all and (min-width: 41em)'
-wvuorientation.small-med:
-  label: small-med
-  mediaQuery: 'all and (min-width: 26em)'
 wvuorientation.small:
   label: small
   mediaQuery: 'all and (min-width: 25em)'
+wvuorientation.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+wvuorientation.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+wvuorientation.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+wvuorientation.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'
