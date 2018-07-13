@@ -1,25 +1,26 @@
-uuid: efdd882f-3c52-46ca-8a0f-f95c1b41e7a3
+uuid: 544618a6-cc09-4612-8360-bccc097aaef3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_card_rcar_ref
+    - field.storage.node.field_media_test
+    - media.type.file
     - node.type.card
-id: node.card.field_card_rcar_ref
-field_name: field_card_rcar_ref
+id: node.card.field_media_test
+field_name: field_media_test
 entity_type: node
 bundle: card
-label: 'Related Card'
+label: 'Media Test'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      card: card
+      file: file
     sort:
       field: _none
     auto_create: false

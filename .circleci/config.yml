@@ -18,6 +18,7 @@ defaults: &defaults
     # TEST_SITE_NAME: The name of the test site to provide when installing.
     # ADMIN_PASSWORD: The admin password to use when installing.
     # ADMIN_EMAIL:    The email address to give the admin when installing.
+    # THEME_NAME:     The name of your custom theme usually 
     #=========================================================================
     TZ: "/usr/share/zoneinfo/America/Los_Angeles"
 
@@ -110,19 +111,19 @@ jobs:
             - run:
                 name: build assets
                 command: composer -n build-assets
-
+            
             - run:
                 name: Install Node Modules
-                command: cd web/themes/custom/wvuorientation && yarn install
-
+                command: cd web/themes/custom/wvuorientation && yarn 
+            
             - save_cache:
                 key: node-cache
                 paths:
                     - $HOME/.node/cache
 
-            - run:
+            - run:    
                 name: Build Theme Assets
-                command: cd web/themes/custom/$THEME_NAME && gulp compile && gulp build
+                command: cd web/themes/custom/wvuorientation && gulp build
 
             - run:
                 name: prepare database for site-under test
