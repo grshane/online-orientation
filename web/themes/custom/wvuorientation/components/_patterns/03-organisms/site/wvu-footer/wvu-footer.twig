@@ -1,6 +1,54 @@
 <footer class="wvu-footer">
 
-  <div class="wvu-footer__content">
+  <div class="footer-upper-content">
+    <div class="footer-contact-info">
+      <strong>West Virgina University</strong>
+      WVU Online
+    </div>
+    <div class="footer-menu-wrapper">
+      {% include "@molecules/menus/_menu.twig" with {
+        menu_class: "footer-menu",
+        items: menu_items,
+      } %}
+    </div>
+    <div class="footer-follow-us">
+      <h3>Follow Us</h3>
+      <div class="wvu-footer__social-media-icons">
+        <a class="facebook" href="//www.facebook.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "facebook",
+            icon_name: "facebook-f-brands",
+            icon_role: "link",
+            icon_title: "Link to our Facebook page",
+            icon_desc: "Facebook logo with a link to our Facebook page",
+          } %}
+        </a>
+        <a class="twitter" href="//www.twitter.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "twitter",
+            icon_name: "twitter-brands",
+            icon_role: "link",
+            icon_title: "Link to our Twitter page",
+            icon_desc: "Twitter logo with a link to our Twitter page",
+          } %}
+        </a>
+        <a class="youtube" href="//www.youtube.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "youtube",
+            icon_name: "play-solid",
+            icon_role: "link",
+            icon_title: "Link to our Youtube page",
+            icon_desc: "Youtube logo with a link to our Youtube page",
+          } %}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wvu-footer__static_content">
     <div class="wvu-footer__affirmative-action-links-and-statement">
       <ul class="wvu-footer__affirmative-action-links">
         <li><a href="https://wvu.edu/about-wvu/wvu-facts">Accreditations</a></li>
@@ -20,36 +68,38 @@
       <p>
         Follow WVU on:
       </p>
-      <a class="facebook" href="//www.facebook.com" target="_blank">
+      <div class="wvu-footer__social-media-icons">
+        <a class="facebook" href="//www.facebook.com" target="_blank">
           {% include "@atoms/04-images/icons/_icon.twig" with {
-              icon_base_class: "icon",
-              icon_blockname: "facebook",
-              icon_name: "facebook-f-brands",
-              icon_role: "link",
-              icon_title: "Facebook Logo",
-              icon_desc: "Facebook logo with a link to our Facebook page",
+            icon_base_class: "icon",
+            icon_blockname: "facebook",
+            icon_name: "facebook-f-brands",
+            icon_role: "link",
+            icon_title: "Link to our Facebook page",
+            icon_desc: "Facebook logo with a link to our Facebook page",
           } %}
-      </a>
-      <a class="twitter" href="//www.twitter.com" target="_blank">
+        </a>
+        <a class="twitter" href="//www.twitter.com" target="_blank">
           {% include "@atoms/04-images/icons/_icon.twig" with {
-              icon_base_class: "icon",
-              icon_blockname: "twitter",
-              icon_name: "twitter-brands",
-              icon_role: "link",
-              icon_title: "Twitter Logo",
-              icon_desc: "Twitter logo with a link to our Twitter page",
+            icon_base_class: "icon",
+            icon_blockname: "twitter",
+            icon_name: "twitter-brands",
+            icon_role: "link",
+            icon_title: "Link to our Twitter page",
+            icon_desc: "Twitter logo with a link to our Twitter page",
           } %}
-      </a>
-      <a class="youtube" href="//www.youtube.com" target="_blank">
+        </a>
+        <a class="youtube" href="//www.youtube.com" target="_blank">
           {% include "@atoms/04-images/icons/_icon.twig" with {
-              icon_base_class: "icon",
-              icon_blockname: "youtube",
-              icon_name: "play-solid",
-              icon_role: "link",
-              icon_title: "Youtube Logo",
-              icon_desc: "Youtube logo with a link to our Youtube page",
+            icon_base_class: "icon",
+            icon_blockname: "youtube",
+            icon_name: "play-solid",
+            icon_role: "link",
+            icon_title: "Link to our Youtube page",
+            icon_desc: "Youtube logo with a link to our Youtube page",
           } %}
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 

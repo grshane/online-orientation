@@ -186,9 +186,6 @@
         "Issue 2741429: calculateDependencies doesn't check $mode_entity if it is NULL": "https://www.drupal.org/files/issues/2741429.2.patch",
         "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch"
       },
-      "drupal/webform_views": {
-        "patch 2": "https://www.drupal.org/files/issues/2945921-php-notice-2.patch"
-      },
       "drupal/media_entity_browser": {
         "Issue 2928275": "https://www.drupal.org/files/issues/2018-04-04/2928275-upload-widget-6.patch"
       },
