@@ -1,29 +1,55 @@
 <footer class="wvu-footer">
 
-  <div class="wvu-footer__affirmative-action-statement-and-social-media">
-    <div class="wvu-container">
-
+  <div class="wvu-footer__content">
+    <div class="wvu-footer__affirmative-action-links-and-statement">
+      <ul class="wvu-footer__affirmative-action-links">
+        <li><a href="https://wvu.edu/about-wvu/wvu-facts">Accreditations</a></li>
+        <li><a href="https://webstandards.wvu.edu">Web Standards</a></li>
+        <li><a href="https://consumerinformation.wvu.edu/">Consumer Info</a></li>
+        <li><a href="mailto:web_services@mail.wvu.edu">Questions or Comments?</a></li>
+      </ul>
       <div class="wvu-footer__affirmative-action-statement">
-        <ul>
-          <li><a href="https://wvu.edu/about-wvu/wvu-facts">Accreditations</a></li>
-          <li><a href="https://webstandards.wvu.edu">Web Standards</a></li>
-          <li><a href="https://consumerinformation.wvu.edu/">Consumer Info</a></li>
-          <li><a href="mailto:web_services@mail.wvu.edu">Questions or Comments?</a></li>
-        </ul>
-        <p>© 2018 West Virginia University. WVU is an EEO/Affirmative Action employer — Minority/Female/Disability/Veteran.</p>
+        <p>
+          &copy; 2018 West Virginia University. WVU is an EEO/Affirmative Action employer —
+          <br/>
+          Minority/Female/Disability/Veteran.
+        </p>
       </div>
-      <div class="wvu-footer__social-media">
-        <p>Follow WVU Teaching & Learning Commons on: <a class="wvu-footer__social-media-icon wvu-footer__social-media-icon--facebook" href="https://www.facebook.com/wvutlc/">
-            <svg class="wvu-footer__social-media-icon--facebook">
-              <use xlink:href="/themes/custom/wvu_celebrate_2018/images/facebook.svg#facebook" alt="facebook">
-              </use>
-            </svg></a> <a class="wvu-footer__social-media-icon wvu-footer__social-media-icon--twitter" href="https://twitter.com/wvutlcommons">
-            <svg class="wvu-footer__social-media-icon--twitter">
-              <use xlink:href="/themes/custom/wvu_celebrate_2018/images/twitter.svg#twitter" alt="facebook">
-              </use>
-            </svg>
-          </a>
-      </div>
+    </div>
+    <div class="wvu-footer__social-media">
+      <p>
+        Follow WVU on:
+      </p>
+      <a class="facebook" href="//www.facebook.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+              icon_base_class: "icon",
+              icon_blockname: "facebook",
+              icon_name: "facebook-f-brands",
+              icon_role: "link",
+              icon_title: "Facebook Logo",
+              icon_desc: "Facebook logo with a link to our Facebook page",
+          } %}
+      </a>
+      <a class="twitter" href="//www.twitter.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+              icon_base_class: "icon",
+              icon_blockname: "twitter",
+              icon_name: "twitter-brands",
+              icon_role: "link",
+              icon_title: "Twitter Logo",
+              icon_desc: "Twitter logo with a link to our Twitter page",
+          } %}
+      </a>
+      <a class="youtube" href="//www.youtube.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+              icon_base_class: "icon",
+              icon_blockname: "youtube",
+              icon_name: "play-solid",
+              icon_role: "link",
+              icon_title: "Youtube Logo",
+              icon_desc: "Youtube logo with a link to our Youtube page",
+          } %}
+      </a>
     </div>
   </div>
 

@@ -11,3 +11,21 @@ items:
   4:
     name: "Expand Read More"
     value: "wvu_read_more"
+  5:
+    name: "Facebook"
+    value: "facebook-f-brands"
+    role: "link"
+    title: "Facebook Logo"
+    desc: "Facebook logo with a link to our Facebook page"
+  6:
+    name: "Twitter"
+    value: "twitter-brands"
+    role: "link"
+    title: "Twitter Logo"
+    desc: "Twitter logo with a link to our Twitter page"
+  7:
+    name: "Youtube"
+    value: "play-solid"
+    role: "link"
+    title: "Youtube Logo"
+    desc: "Youtube logo with a link to our Youtube page"
