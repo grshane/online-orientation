@@ -18,10 +18,9 @@
       </p>
     </div>
     <div class="footer-menu-wrapper">
-      {% include "@molecules/menus/_menu.twig" with {
-        menu_class: "footer-menu",
-        items: menu_items,
-      } %}
+      {% block footer_content %}
+        {% include "@molecules/menus/footer-menu/footer-menu.twig" %}
+      {% endblock %}
     </div>
     <div class="footer-follow-us">
       <h4>Follow Us</h4>

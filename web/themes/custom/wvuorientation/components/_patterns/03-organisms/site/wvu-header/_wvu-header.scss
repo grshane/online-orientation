@@ -5,8 +5,8 @@
 .wvu-masthead {
   background: $wvu-blue;
   padding: 2em 0;
+}
 
-  .container {
-    @extend %container;
-  }
+.content-wrapper {
+  @include wrapper;
 }
