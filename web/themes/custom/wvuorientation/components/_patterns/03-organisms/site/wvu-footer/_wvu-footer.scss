@@ -1,21 +1,68 @@
 .wvu-footer {
-  background-color: $wvu-blue;
   color: $white;
-  padding: 1em 2.5vw;
+
+  .footer-upper {
+    /// change to variable
+    background-color: #112755;
+  }
 
   .footer-upper-content {
+    //@include wrapper;
+    padding: 5em 0;
     margin: 0 auto;
     max-width: 80em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      padding: 5em 2em;
+    }
+
+    h3, h4 {
+      margin: 0;
+    }
   }
 
   .footer-contact-info {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1200px) {
+      padding-bottom: 2em;
+      //padding-left: 2em;
+    }
+    //padding: 0 2em;
+    //padding: 2em;
+
+    p {
+      margin: 0;
+    }
+
+    .footer-contact-info-address {
+      a {
+        color: $pms-629-c;
+      }
+    }
+
+    .footer-contact-info-phone-email {
+      color: $wvu-gold;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-lower {
+    /// change to variable
+    background-color: #041f4a;
   }
 
   .wvu-footer__static_content {
+    //@include wrapper;
+    padding: 5em 0;
     margin: 0 auto;
     max-width: 80em;
     display: flex;
@@ -30,8 +77,22 @@
     }
   }
 
+  .footer-menu-wrapper {
+    flex-grow: 1;
+    //margin: 0 2em;
+    padding: 0 2em;
+
+    .footer-menu {
+      //justify-content: space-between;
+    }
+  }
+
   ul.footer-menu:first-child > li > a {
     color: white;
+  }
+
+  ul.footer-menu:first-child > li {
+    //margin-right: 1em;
   }
 
   .wvu-footer__static_content a {
@@ -46,6 +107,7 @@
   .wvu-footer__affirmative-action-links {
     display: flex;
     padding-left: 0;
+    margin: 0;
 
     li {
       list-style: none;
@@ -53,6 +115,11 @@
     }
   }
 
+  .wvu-footer__affirmative-action-statement {
+    p {
+      margin: 0;
+    }
+  }
   .wvu-footer__social-media {
     display: flex;
     height: 100%;
@@ -100,7 +167,7 @@
 
   .footer-follow-us {
     a {
-      padding: 1em;
+      padding: 0.7em;
     }
 
     svg {
