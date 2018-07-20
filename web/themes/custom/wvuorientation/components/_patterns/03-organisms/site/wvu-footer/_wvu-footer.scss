@@ -7,19 +7,16 @@
   }
 
   .footer-upper-content {
-    //@include wrapper;
-    padding: 5em 0;
-    margin: 0 auto;
-    max-width: 80em;
+    @include wrapper(
+      $v-padding: $space-quadruple
+    );
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media screen and (max-width: 1200px) {
-      padding: 5em 2em;
-    }
-
-    h3, h4 {
+    //h3,
+    h4 {
       margin: 0;
     }
   }
@@ -27,13 +24,8 @@
   .footer-contact-info {
     display: flex;
     flex-direction: column;
-
-    @media screen and (max-width: 1200px) {
-      padding-bottom: 2em;
-      padding-right: 2em;
-    }
-    //padding: 0 2em;
-    //padding: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
 
     p {
       margin: 0;
@@ -63,10 +55,14 @@
   .wvu-footer__static_content {
     display: flex;
     flex-wrap: wrap;
-    //@include wrapper;
-    padding: 5em 0;
-    margin: 0 auto;
-    max-width: 80em;
+
+    @include wrapper(
+      $v-padding: $space-quadruple
+    );
+
+    //padding: 5em 0;
+    //margin: 0 auto;
+    //max-width: 80em;
     justify-content: space-between;
   }
 
@@ -123,6 +119,7 @@
       margin: 0;
     }
   }
+
   .wvu-footer__social-media {
     display: flex;
     height: 100%;
@@ -135,8 +132,6 @@
 
   .wvu-footer__social-media-icons {
     display: flex;
-    align-self: flex-start;
-    align-items: center;
 
     a {
       padding: 0.5em;
@@ -179,4 +174,3 @@
     }
   }
 }
-
