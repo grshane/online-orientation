@@ -1,4 +1,4 @@
-.card {
+.card-wvu-guide {
   position: relative;
   border-radius: 10px;
   border-top: 3em solid $wvu-blue;
@@ -8,13 +8,13 @@
   align-self: flex-start;
 }
 
-.card__copy {
+.card-wvu-guide__copy {
   min-height: 500px;
   display: flex;
   flex-direction: column;
 }
 
-.card__title {
+.card-wvu-guide__title {
   @include heading-xl($font-size: 2rem, $color: $wvu-blue);
   @include no-bottom;
 
@@ -29,23 +29,23 @@
   @include heading-xl($font-size: 2rem, $color: $wvu-blue);
 }
 
-.card__subtitle {
+.card-wvu-guide__subtitle {
   @include heading-medium($font-size: 1rem);
   @include no-bottom;
 
   color: $gray;
 }
 
-.card__body {
+.card-wvu-guide__body {
   margin: 0.7em 0 1em;
   color: black;
 }
 
-.card__link {
+.card-wvu-guide__link {
   @include link;
 }
 
-.card__button {
+.card-wvu-guide__button {
   @include button;
 
   border-radius: 5px;
@@ -61,6 +61,11 @@
   font-weight: bold;
   color: $wvu-gold;
 
+  a {
+    color: $wvu-gold;
+    text-decoration: none;
+  }
+
   &:visited {
     color: $wvu-gold;
   }
@@ -68,10 +73,14 @@
   &:hover {
     background-color: $wvu-gold;
     color: $wvu-blue;
+
+    a {
+      color: $wvu-blue;
+    }
   }
 }
 
-.card__external_link {
+.card-wvu-guide__external_link {
   position: absolute;
   top: 0;
   right: 0;
@@ -82,7 +91,7 @@
   width: 1em;
 }
 
-.title_serial {
+.card-wvu-guide__title_serialtitle_serial {
   display: flex;
   justify-content: space-between;
 }
@@ -93,21 +102,21 @@ svg.external-link__icon {
   width: 100%;
 }
 
-.card__body-extra {
+.card-wvu-guide__body-extra {
   color: black;
 }
 
-.button-wrapper {
+.card-wvu-guide__button-wrapper {
   margin-top: auto;
 }
 
 // Variations
-.card--bg {
+.card-wvu-guide--bg {
   background-color: $white;
   padding: 1em;
 }
 
-.card--multiple {
+.card-wvu-guide--multiple {
   /*
   box-shadow:
     0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.3),
