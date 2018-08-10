@@ -112,13 +112,13 @@
     </div>
   {% else %}
     <div class="card-wvu-guide__button-wrapper">
-      {% include "@atoms/06-buttons/01-button.twig" with {
-          "button_content": card_button_content,
-          "button_url": card_button_url,
-          "button_base_class": card_button_base_class|default('button'),
-          "button_attributes": card_button_attributes,
-          "button_modifiers": card_button_modifiers,
-          "button_blockname": card_blockname|default(card_base_class),
+      {% include "@atoms/01-links/link/link.twig" with {
+          "link_content": card_button_content,
+          "link_url": card_button_url,
+          "link_base_class": card_button_base_class|default('button'),
+          "link_attributes": card_button_attributes,
+          "link_modifiers": card_button_modifiers,
+          "link_blockname": card_blockname|default(card_base_class),
       } %}
     </div>
   {% endif %}
