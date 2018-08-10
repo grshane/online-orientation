@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.card.field_card_accordion_body
     - field.field.node.card.field_card_body
     - field.field.node.card.field_card_card_type_ref
-    - field.field.node.card.field_card_cgro_ref
     - field.field.node.card.field_card_external_link
     - field.field.node.card.field_card_rcar_ref
     - field.field.node.card.field_card_summary
@@ -53,7 +52,7 @@ content:
     type: text_textarea_with_summary
     region: content
   field_card_body:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -79,20 +78,11 @@ content:
     type: text_textarea
     region: content
   field_card_card_type_ref:
-    weight: 3
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_card_cgro_ref:
-    type: entity_reference_autocomplete
-    weight: 7
-    region: content
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_card_external_link:
     weight: 4
     settings:
@@ -138,7 +128,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_card_summary:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -150,15 +140,18 @@ content:
             state: visible
             condition: value
             grouping: AND
-            values_set: 1
+            values_set: 3
             value: ''
-            values: {  }
+            values: "8\r\n9\r\n11"
             value_form:
               -
                 target_id: '11'
             effect: show
             effect_options: {  }
             selector: ''
+            field_card_card_type_ref:
+              -
+                target_id: '11'
           entity_type: node
           bundle: card
     type: string_textarea
