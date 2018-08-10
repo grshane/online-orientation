@@ -30,7 +30,10 @@
  */
 #}
 
+{{ dd(fields) }}
+
 {% set card_body = fields.field_cgro_body.content|striptags|trim %}
+{% set card_modifiers = ['multiple'] %}
 
 {% embed "@molecules/wvu-guide/wvu-guide.twig" with {
   card_title: fields.field_cgro_public_title.content,
