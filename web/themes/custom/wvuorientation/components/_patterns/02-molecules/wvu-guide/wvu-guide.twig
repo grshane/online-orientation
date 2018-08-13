@@ -50,78 +50,82 @@
     {% if card_external_link %}
       <div class="card-wvu-guide__external_link">
         {% include "@atoms/04-images/icons/_icon.twig" with {
-            icon_base_class: "icon",
-            icon_blockname: "external-link",
-            icon_name: "wvu_external_link_alt",
+          icon_base_class: "icon",
+          icon_blockname: "external-link",
+          icon_name: "wvu_external_link_alt",
         } %}
       </div>
     {% endif %}
   {% endblock %}
   <div {{ bem(card_copy_base_class|default('card-wvu-guide__copy'), (card_copy_modifiers), card_copy_blockname) }}>
     <div class="card-wvu-guide__title_serial">
-    {{ title_prefix }}
-    {% include "@atoms/02-text/00-headings/_heading.twig" with {
-      "heading_level": 2,
-      "heading": card_title,
-      "heading_url": card_title_link|default(card_link_url),
-      "heading_blockname": card_title_blockname|default(card_base_class),
-      "heading_modifiers": card_title_modifiers,
-      "heading_link_base_class": card_title_link_base_class|default('title-link'),
-      "heading_link_blockname": card_base_class,
-      "heading_base_class": card_title_base_class|default('title'),
-    } %}
-    {{ title_suffix }}
+      {{ title_prefix }}
+      {% include "@atoms/02-text/00-headings/_heading.twig" with {
+        "heading_level": 2,
+        "heading": card_title,
+        "heading_url": card_title_link|default(card_link_url),
+        "heading_blockname": card_title_blockname|default(card_base_class),
+        "heading_modifiers": card_title_modifiers,
+        "heading_link_base_class": card_title_link_base_class|default('title-link'),
+        "heading_link_blockname": card_base_class,
+        "heading_base_class": card_title_base_class|default('title'),
+      } %}
+      {{ title_suffix }}
 
-    {{ title_prefix }}
-    {% include "@atoms/02-text/00-headings/_heading.twig" with {
+      {{ title_prefix }}
+      {% include "@atoms/02-text/00-headings/_heading.twig" with {
         "heading_level": 2,
         "heading": card_serial_number,
         "heading_base_class": card_title_base_class|default('serial'),
-    } %}
-    {{ title_suffix }}
+      } %}
+      {{ title_suffix }}
 
     </div>
-  {% if card_body %}
-    <div class="card-wvu-guide__body">
-      {% include "@atoms/02-text/text/01-paragraph.twig" with {
-        "paragraph_content": card_body,
-        "paragraph_blockname": card_body_base_class|default(card_base_class),
-        "paragraph_modifiers": card_body_modifiers,
-        "paragraph_base_class": card_body_base_class|default('body'),
-      } %}
-    </div>
-  {% endif %}
-  {% if card_extra_content %}
-    <div class="collapse" id="collapse-{{ card_serial_number }}" aria-expanded="false" role="presentation" style="">
-      {% include "@atoms/02-text/text/01-paragraph.twig" with {
+    {% if card_body %}
+      <div class="card-wvu-guide__body">
+        {% include "@atoms/02-text/text/01-paragraph.twig" with {
+          "paragraph_content": card_body,
+          "paragraph_blockname": card_body_base_class|default(card_base_class),
+          "paragraph_modifiers": card_body_modifiers,
+          "paragraph_base_class": card_body_base_class|default('body'),
+        } %}
+      </div>
+    {% endif %}
+    {% if card_extra_content %}
+      <div class="collapse" id="collapse-{{ card_serial_number }}"
+           aria-expanded="false" role="presentation" style="">
+        {% include "@atoms/02-text/text/01-paragraph.twig" with {
           "paragraph_content": card_body_extra,
           "paragraph_blockname": card_body_base_class|default(card_base_class),
           "paragraph_modifiers": card_body_modifiers,
           "paragraph_base_class": card_body_base_class|default('body-extra'),
-      } %}
-    </div>
-    <div class="card-wvu-guide__button-wrapper">
-      <h2 class="card-wvu-guide__button" data-toggle="collapse" data-target="#collapse-{{ card_serial_number }}" aria-expanded="false" aria-controls="collapse-{{ card_serial_number }}">
+        } %}
+      </div>
+      <div class="card-wvu-guide__button-wrapper">
+        <h2 class="card-wvu-guide__button" data-toggle="collapse"
+            data-target="#collapse-{{ card_serial_number }}"
+            aria-expanded="false"
+            aria-controls="collapse-{{ card_serial_number }}">
           {% include "@atoms/04-images/icons/_icon.twig" with {
-              icon_base_class: "icon",
-              icon_blockname: "read-more",
-              icon_name: "wvu_read_more",
+            icon_base_class: "icon",
+            icon_blockname: "read-more",
+            icon_name: "wvu_read_more",
           } %}
-        Read more
-      </h2>
-    </div>
-  {% else %}
-    <div class="card-wvu-guide__button-wrapper">
-      {% include "@atoms/01-links/link/link.twig" with {
+          Read more
+        </h2>
+      </div>
+    {% else %}
+      <div class="card-wvu-guide__button-wrapper">
+        {% include "@atoms/01-links/link/link.twig" with {
           "link_content": card_button_content,
           "link_url": card_button_url,
           "link_base_class": card_button_base_class|default('button'),
           "link_attributes": card_button_attributes,
           "link_modifiers": card_button_modifiers,
           "link_blockname": card_blockname|default(card_base_class),
-      } %}
-    </div>
-  {% endif %}
+        } %}
+      </div>
+    {% endif %}
   </div>
 </div><!-- copy -->
 
