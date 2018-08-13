@@ -85,6 +85,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_extender: 0
   twig_tweak: 0
   unified_twig_ext: 0
   update: 0

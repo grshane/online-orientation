@@ -30,27 +30,24 @@
  */
 #}
 
+{{ dd(fields) }}
 {% set card_type = fields.field_card_card_type_ref.content|striptags|trim %}
+{{ dd(card_type) }}
 {% set card_button_content = "Go To "~ fields.title.content|striptags|trim %}
+
 
 {#{% set card_modifiers = ['multiple'] %}#}
 {% if card_type == 'Summary with Long Text' %}
   {% if (fields.field_card_summary.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim) is not empty %}
     {% set card_body = fields.field_card_summary.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
-    Summary Not Empty LT
   {% else %}
-    {% set card_body = fields.field_card_body.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(50) %}
-    Summary Empty LT
+    {% set card_body = fields.field_card_body.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
   {% endif %}
 {% elseif card_type == 'Accordion with Summary' %}
-  {% if (fields.field_card_accordion_body.summary) is not empty %}
-    {% set card_body = fields.field_card_accordion_body.summary|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
-    Summary Not Empty
-  {% else %}
-    {% set card_body = fields.field_card_body.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(50) %}
-    Summary Empty
-  {% endif %}
+    {% set card_body = fields.field_card_accordion_body.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
+  {% set card_extra_content = fields.field_card_accordion_body_1.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
 {% endif %}
+{{ dd(card_body) }}
 {% embed "@molecules/wvu-guide/wvu-guide.twig" with {
   card_title: fields.title.content|striptags|trim,
   card_serial_number: row.index + 1,
