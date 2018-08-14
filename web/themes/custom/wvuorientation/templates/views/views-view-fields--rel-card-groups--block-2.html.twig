@@ -48,6 +48,7 @@
   {% set card_extra_content = fields.field_card_accordion_body_1.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
 {% endif %}
 {{ dd(card_body) }}
+{{ dd(card_extra_content) }}
 {% embed "@molecules/wvu-guide/wvu-guide.twig" with {
   card_title: fields.title.content|striptags|trim,
   card_serial_number: row.index + 1,
