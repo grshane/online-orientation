@@ -6,18 +6,21 @@
    * In Pattern-Lab, {{ directory }} is empty.
    * In Drupal {{ directory }} is the current theme's path
 #}
-
+{% set flying_wv_base_class = flying_wv_base_class|default('wvu-masthead__logo') %}
+{% set link_base_class = flying_wv_base_class %}
 {% set image_src %}
-  {{ directory }}/images/flying-wv-w-signature.png
+{{ directory }}/images/flying-wv-w-signature.png
 {% endset %}
-
-{% block link_content %}
-  {% include "@atoms/04-images/00-image/figure.twig" with {
-      img_src: image_src,
-      img_alt: 'Logo',
-      img_url: logo_link_url|default('/'),
-      image_figure_base_class: 'wvu-masthead__image',
-      image_link_blockname: 'logo',
-  } %}
-  <span class="wvu-masthead__title">WVU Online</span>
-{% endblock %}
+{% embed "@atoms/01-links/link/link.twig" with {
+  link_url: link_url
+}%}
+  {% block link_content %}
+    {% include "@atoms/04-images/00-image/figure.twig" with {
+        img_src: image_src,
+        img_alt: 'Logo',
+        image_figure_base_class: 'wvu-masthead__image',
+        image_link_blockname: 'logo',
+    } %}
+    <span class="wvu-masthead__title">WVU Online</span>
+  {% endblock %}
+{% endembed %}

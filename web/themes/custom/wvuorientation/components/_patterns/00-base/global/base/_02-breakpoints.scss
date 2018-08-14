@@ -77,3 +77,13 @@ $max-width: $xl;
     padding: 0;
   }
 }
+
+%flex-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 1em;
+  @media large {
+    padding: 0;
+  }
+}
