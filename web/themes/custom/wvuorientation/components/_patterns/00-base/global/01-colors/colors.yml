@@ -57,6 +57,12 @@ items:
     value: '#cd4c08'
   - name: $pms-115-c
     value: '#fdda24'
+  - name: $facebook-color
+    value: '#3b5998'
+  - name: $twitter-color
+    value: '#1da1f2'
+  - name: $youtube-color
+    value: '#f00'
 meta:
   description: >-
     To add to these items, use Sass variables that start with <code>$</code> in

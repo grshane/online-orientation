@@ -2,6 +2,9 @@ uuid: 9e06325b-e769-4237-8b40-94a2f25bf789
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_visibility_groups
+    - ctools
   theme:
     - wvuorientation
 _core:
@@ -9,7 +12,7 @@ _core:
 id: wvuorientation_page_title
 theme: wvuorientation
 region: content
-weight: -3
+weight: 0
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +20,16 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      card: card
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -6,25 +6,21 @@ dependencies:
     - block_visibility_groups.block_visibility_group.card_path
     - views.view.rel_related_cards
   module:
-    - block_class
     - block_visibility_groups
     - views
   theme:
     - wvuorientation
-third_party_settings:
-  block_class:
-    classes: ''
 id: views_block__rel_related_cards_block_1
 theme: wvuorientation
 region: content
-weight: 0
+weight: 4
 provider: null
 plugin: 'views_block:rel_related_cards-block_1'
 settings:
   id: 'views_block:rel_related_cards-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
   context_mapping: {  }

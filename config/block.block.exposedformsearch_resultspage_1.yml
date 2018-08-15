@@ -5,14 +5,10 @@ dependencies:
   config:
     - views.view.search_results
   module:
-    - block_class
     - block_visibility_groups
     - views
   theme:
     - wvuorientation
-third_party_settings:
-  block_class:
-    classes: ''
 id: exposedformsearch_resultspage_1
 theme: wvuorientation
 region: header

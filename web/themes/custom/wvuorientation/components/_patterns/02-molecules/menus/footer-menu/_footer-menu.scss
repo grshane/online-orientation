@@ -1,0 +1,23 @@
+.footer-menu {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-menu--sub {
+  flex-direction: column;
+}
+
+a.footer-menu__link {
+  text-decoration: none;
+}
+
+ul.footer-menu:first-child > li > a {
+  font-weight: bold;
+}
+
+.footer-menu__item--with-sub .expand-sub {
+  display: none;
+}

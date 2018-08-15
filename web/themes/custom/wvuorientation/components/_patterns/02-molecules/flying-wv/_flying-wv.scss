@@ -6,11 +6,11 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  width: 66%;
 
   .wvu-masthead__image {
     max-width: 300px;
   }
-
   .wvu-masthead__title {
     color: $white;
     display: inline-block;

@@ -1,162 +1,176 @@
 .wvu-footer {
-  box-sizing: border-box;
-  //font-size: 0.8em;
-  background-color: $wvu-blue;
   color: $white;
-  padding: 1em 2.5vw;
 
-  .wvu-container {
-    margin: 0 auto;
-    max-width: 80em;
+  .footer-upper {
+    /// change to variable
+    background-color: #112755;
+  }
+
+  .footer-upper-content {
+    @include wrapper(
+      $v-padding: $space-quadruple
+    );
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    //h3,
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    padding-right: 2em;
+
+    p {
+      margin: 0;
+    }
+
+    .footer-contact-info-address {
+      a {
+        color: $pms-629-c;
+      }
+    }
+
+    .footer-contact-info-phone-email {
+      color: $wvu-gold;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-lower {
+    /// change to variable
+    background-color: #041f4a;
+  }
+
+  .wvu-footer__static_content {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include wrapper(
+      $v-padding: $space-quadruple
+    );
+
+    //padding: 5em 0;
+    //margin: 0 auto;
+    //max-width: 80em;
+    justify-content: space-between;
   }
 
   a {
-    color: $white;
-    text-decoration: underline;
+    color: $wvu-gold;
 
     &:hover {
-      color: $wvu-gold;
+      color: $white;
+    }
+  }
+
+  .footer-menu-wrapper {
+    flex-grow: 1;
+    //margin: 0 2em;
+    //padding: 0 2em;
+
+    .footer-menu {
+      //justify-content: space-between;
+    }
+  }
+
+  ul.footer-menu:first-child > li > a {
+    color: white;
+  }
+
+  ul.footer-menu:first-child > li {
+    padding-right: 2em;
+    padding-bottom: 1em;
+  }
+
+  .wvu-footer__static_content a {
+    text-decoration: underline;
+  }
+
+  .wvu-footer__affirmative-action-links-and-statement {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wvu-footer__affirmative-action-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      margin-right: 1em;
     }
   }
 
   .wvu-footer__affirmative-action-statement {
-    font-size: 0.8em;
+    p {
+      margin: 0;
+    }
   }
 
-  ul {
+  .wvu-footer__social-media {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    & > p {
+      margin: 0 1em 0 0;
+    }
+  }
+
+  .wvu-footer__social-media-icons {
     display: flex;
 
-    li {
-      list-style: none;
-      margin-left: 1em;
+    a {
+      padding: 0.5em;
+      margin-right: 1em;
+      border-radius: 100%;
+      display: flex;
+      color: white;
 
-      &:first-of-type {
-        margin-left: 0;
+      &:hover {
+        color: $wvu-gold;
       }
     }
-  }
-}
 
-.wvu-footer__social-media-icon {
-  svg {
-    height: 1.5em;
-    width: 1.5em;
-    position: relative;
-    top: 4px;
-    fill: $white;
-
-    &:hover {
-      fill: $wvu-gold;
+    svg {
+      height: 1em;
+      width: 1em;
     }
-  }
-}
 
-.wvu-contact {
-  float: left;
-  padding-bottom: 13px;
-  margin-bottom: 18px;
-  color: $white;
-
-  @media (min-width: 48em) {
-    width: 100%;
-    float: left;
-  }
-
-  a {
-    text-decoration: underline;
-    color: $white;
-
-    &:hover {
-      color: $wvu-gold;
+    .facebook {
+      background-color: $facebook-color;
     }
-  }
-}
 
-.wvu-credits {
-  @media (min-width: 48em) {
-    margin-left: 0;
-    margin-right: 0;
-    width: 50%;
-    float: left;
-    padding-bottom: 13px;
-    clear: left;
-  }
+    .twitter {
+      background-color: $twitter-color;
+    }
 
-  a {
-    text-decoration: underline;
-    color: $white;
-
-    &:hover {
-      color: $wvu-gold;
+    .youtube {
+      background-color: $youtube-color;
     }
   }
 
-  li {
-    list-style-type: none;
-    display: inline;
-  }
-}
-
-.wvu-links {
-  a {
-    text-decoration: underline;
-    color: $white;
-
-    &:hover {
-      color: $wvu-gold;
+  .footer-follow-us {
+    a {
+      padding: 0.7em;
     }
-  }
-}
 
-.wvu-icons {
-  ul {
-    clear: both;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style-type: none;
-  }
-
-  li {
-    display: inline;
-    margin: 0;
-    list-style-type: none;
-  }
-
-  @media (min-width: 48em) {
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    width: 50%;
-
-    ul {
-      float: right;
-    }
-  }
-}
-
-.wvu-social {
-  padding: 3px 0;
-  float: left;
-
-  li {
-    float: left;
-  }
-
-  a {
-    height: 24px;
-    margin: 0;
-    float: left;
-    width: 24px;
-    padding-left: 0;
-    padding-top: 5px;
-    overflow: hidden;
-    border: 0;
-    background-color: transparent;
-
-    @media print, not all, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-      -webkit-background-size: contain;
-      background-size: contain;
+    svg {
+      height: 2em;
+      width: 2em;
     }
   }
 }

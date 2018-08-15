@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.cgro.field_cgro_body
     - field.field.node.cgro.field_cgro_card_ref
-    - field.field.node.cgro.field_cgro_link_or_card
     - field.field.node.cgro.field_cgro_new_students
     - field.field.node.cgro.field_cgro_public_title
     - field.field.node.cgro.field_cgro_vdas_ref
@@ -79,22 +78,16 @@ content:
       override_labels: true
       label_singular: Card
       label_plural: ''
-      allow_new: true
       allow_existing: true
       match_operator: CONTAINS
       collapsible: false
       collapsed: false
+      allow_new: false
       allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
     type: inline_entity_form_complex
-    region: content
-  field_cgro_link_or_card:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_cgro_new_students:
     weight: 3

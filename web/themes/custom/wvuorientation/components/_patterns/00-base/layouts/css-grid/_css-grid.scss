@@ -3,7 +3,7 @@ $card-size: minmax(305px, 400px);
 @mixin css-grid {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 380px));
   justify-content: center;
 }
 

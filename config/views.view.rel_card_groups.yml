@@ -5,6 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_card_accordion_body
     - field.storage.node.field_card_body
+    - field.storage.node.field_card_card_type_ref
+    - field.storage.node.field_card_external_link
+    - field.storage.node.field_card_rcar_ref
+    - field.storage.node.field_card_summary
     - field.storage.node.field_cgro_body
     - field.storage.node.field_cgro_card_ref
     - field.storage.node.field_cgro_new_students
@@ -16,6 +20,7 @@ dependencies:
     - user.role.administrator
   module:
     - draggableviews
+    - link
     - node
     - options
     - taxonomy
@@ -162,7 +167,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Card Groups'
+      title: ''
       defaults:
         title: false
         style: false
@@ -174,16 +179,11 @@ display:
         filter_groups: false
         sorts: false
       style:
-        type: grid
+        type: default
         options:
           grouping: {  }
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       fields:
@@ -322,7 +322,7 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
+            alter_text: false
             text: 'Go To {{ field_cgro_public_title }}'
             make_link: false
             path: ''
@@ -361,8 +361,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: ''
-          output_url_as_text: false
-          absolute: false
+          output_url_as_text: true
+          absolute: true
           entity_type: node
           plugin_id: entity_link
       relationships:
@@ -543,16 +543,11 @@ display:
         fields: false
       title: ''
       style:
-        type: grid
+        type: default
         options:
           grouping: {  }
-          columns: 4
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
         options: {  }
@@ -665,7 +660,7 @@ display:
           field: field_card_accordion_body
           relationship: field_cgro_card_ref
           group_type: group
-          admin_label: ''
+          admin_label: 'Accordion Summary'
           label: ''
           exclude: false
           alter:
@@ -710,7 +705,7 @@ display:
           click_sort_column: value
           type: text_summary_or_trimmed
           settings:
-            trim_length: 600
+            trim_length: 200
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -774,6 +769,68 @@ display:
           type: text_trimmed
           settings:
             trim_length: 200
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_card_summary:
+          id: field_card_summary
+          table: node__field_card_summary
+          field: field_card_summary
+          relationship: field_cgro_card_ref
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -896,11 +953,266 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: view
-          output_url_as_text: false
-          absolute: false
+          text: 'Read More'
+          output_url_as_text: true
+          absolute: true
           entity_type: node
           plugin_id: entity_link
+        field_card_card_type_ref:
+          id: field_card_card_type_ref
+          table: node__field_card_card_type_ref
+          field: field_card_card_type_ref
+          relationship: field_cgro_card_ref
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_card_external_link:
+          id: field_card_external_link
+          table: node__field_card_external_link
+          field: field_card_external_link
+          relationship: field_cgro_card_ref
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_card_rcar_ref:
+          id: field_card_rcar_ref
+          table: node__field_card_rcar_ref
+          field: field_card_rcar_ref
+          relationship: field_cgro_card_ref
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: 'TRUE'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: 'FALSE'
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_card_accordion_body_1:
+          id: field_card_accordion_body_1
+          table: node__field_card_accordion_body
+          field: field_card_accordion_body
+          relationship: field_cgro_card_ref
+          group_type: group
+          admin_label: 'Accordion Body'
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
     cache_metadata:
       max-age: -1
       contexts:
@@ -912,6 +1224,10 @@ display:
       tags:
         - 'config:field.storage.node.field_card_accordion_body'
         - 'config:field.storage.node.field_card_body'
+        - 'config:field.storage.node.field_card_card_type_ref'
+        - 'config:field.storage.node.field_card_external_link'
+        - 'config:field.storage.node.field_card_rcar_ref'
+        - 'config:field.storage.node.field_card_summary'
         - 'config:field.storage.node.field_media_test'
   entity_reference_1:
     display_plugin: entity_reference
@@ -1094,7 +1410,7 @@ display:
         type: normal
         title: 'Manage Card Groups'
         menu_name: account
-        weight: -50
+        weight: -49
       fields:
         nid:
           id: nid
@@ -1597,6 +1913,13 @@ display:
                 operator: '='
                 value:
                   value: '7'
+                  min: ''
+                  max: ''
+              7:
+                title: '*SAMPLE CONTENT ONLY*'
+                operator: '='
+                value:
+                  value: '8'
                   min: ''
                   max: ''
           plugin_id: numeric
