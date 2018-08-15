@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19e6a1309fb45685ea21327ca17ebb7c",
+    "content-hash": "13759c0ee86efad430f9945a363fc6c6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5434,53 +5434,6 @@
             }
         },
         {
-            "name": "drupal/sidr",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/sidr",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sidr-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "1ea01f72da2682e150614f7a6628a4b3ec198ce0"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1524508094",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "jigarius",
-                    "homepage": "https://www.drupal.org/user/2492730"
-                }
-            ],
-            "description": "Sidr integration for Drupal for more responsive websites.",
-            "homepage": "https://www.drupal.org/project/sidr",
-            "support": {
-                "source": "http://cgit.drupalcode.org/sidr"
-            }
-        },
-        {
             "name": "drupal/simple_block",
             "version": "1.0.0-beta1",
             "source": {
@@ -9481,17 +9434,6 @@
         {
             "name": "webflo/drupal-core-strict",
             "version": "8.5.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "e95610956f961f4421fd9a36849dcd6e2b55f4fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/e95610956f961f4421fd9a36849dcd6e2b55f4fe",
-                "reference": "e95610956f961f4421fd9a36849dcd6e2b55f4fe",
-                "shasum": ""
-            },
             "require": {
                 "asm89/stack-cors": "1.2.0",
                 "composer/installers": "v1.5.0",
