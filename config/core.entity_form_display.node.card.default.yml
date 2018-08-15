@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.browse_files
     - field.field.node.card.field_card_accordion_body
     - field.field.node.card.field_card_body
     - field.field.node.card.field_card_card_type_ref
@@ -14,9 +13,7 @@ dependencies:
     - node.type.card
   module:
     - conditional_fields
-    - entity_browser
     - entity_browser_entity_form
-    - inline_entity_form
     - link
     - text
 id: node.card.default
@@ -25,7 +22,7 @@ bundle: card
 mode: default
 content:
   field_card_accordion_body:
-    weight: 6
+    weight: 5
     settings:
       rows: 9
       summary_rows: 3
@@ -110,22 +107,12 @@ content:
     type: link_default
     region: content
   field_card_rcar_ref:
-    weight: 8
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Card
-      label_plural: ''
-      allow_existing: true
-      match_operator: CONTAINS
-      collapsible: false
-      collapsed: false
-      allow_new: false
-      allow_duplicate: false
+    weight: 6
+    settings: {  }
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
-    type: inline_entity_form_complex
+    type: options_select
     region: content
   field_card_summary:
     weight: 2
@@ -156,25 +143,11 @@ content:
           bundle: card
     type: string_textarea
     region: content
-  field_media_test:
-    weight: 5
-    settings:
-      entity_browser: browse_files
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      selection_mode: selection_append
-      field_widget_replace: false
-      open: false
-      field_widget_display_settings: {  }
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -187,6 +160,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_test: true
   path: true
   promote: true
   sticky: true

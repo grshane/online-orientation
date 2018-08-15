@@ -43,6 +43,18 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "harvesthq/chosen",
+        "type": "drupal-library",
+        "version": "1.8.7",
+        "dist": {
+          "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+          "type": "zip"
+        }
+      }
     }
  ],
     "require": {
@@ -60,6 +72,7 @@
     "drupal/block_visibility_groups": "^1.1",
     "drupal/blocktabs": "^1.0@beta",
     "drupal/captcha": "^1.0@beta",
+    "drupal/chosen": "^2.6",
     "drupal/coffee": "^1.0@beta",
     "drupal/cog": "^1.10",
     "drupal/components": "^1.0",
@@ -127,6 +140,7 @@
     "drupal/yaml_content": "1.x",
     "drush/drush": "~8",
     "fourkitchens/emulsify": "^2.2",
+    "harvesthq/chosen": "^1.8",
     "rvtraveller/qs-composer-installer": "^1.1",
     "twig/extensions": "^1.5",
     "webflo/drupal-core-strict": "^8"
