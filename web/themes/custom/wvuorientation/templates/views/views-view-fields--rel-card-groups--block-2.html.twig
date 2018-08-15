@@ -30,11 +30,8 @@
  */
 #}
 
-{{ dd(fields) }}
 {% set card_type = fields.field_card_card_type_ref.content|striptags|trim %}
-{{ dd(card_type) }}
 {% set card_button_content = "Go To "~ fields.title.content|striptags|trim %}
-
 
 {#{% set card_modifiers = ['multiple'] %}#}
 {% if card_type == 'Summary with Long Text' %}
@@ -47,15 +44,15 @@
     {% set card_body = fields.field_card_accordion_body.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
   {% set card_extra_content = fields.field_card_accordion_body_1.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
 {% endif %}
-{{ dd(card_body) }}
-{{ dd(card_extra_content) }}
+
 {% embed "@molecules/wvu-guide/wvu-guide.twig" with {
   card_title: fields.title.content|striptags|trim,
   card_serial_number: row.index + 1,
   card_body_modifiers: '',
   card_body_blockname: '',
   card_button_url: fields.view_node.content|striptags|trim,
-  card_button_content: card_button_content
+  card_button_content: card_button_content,
+  card_body_extra: card_extra_content
 } %}
   {% block paragraph_content %}
     {{ card_body }}
