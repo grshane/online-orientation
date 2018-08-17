@@ -30,10 +30,10 @@
  */
 #}
 
-{% set card_title = fields.field_card_rcar_ref.content|striptags|trim %}
+{% set card_title = fields.title.content|striptags|trim %}
 
 {% set card_type = fields.field_card_card_type_ref.content|striptags|trim %}
-{% set card_button_content = "Go To "~ card_title %}
+{% set card_button_content = "Go To "~ fields.title.content|striptags|trim %}
 
 {#{% set card_modifiers = ['multiple'] %}#}
 {% if card_type %}
