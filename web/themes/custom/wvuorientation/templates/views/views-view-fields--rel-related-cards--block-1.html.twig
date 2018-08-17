@@ -29,31 +29,35 @@
  * @see template_preprocess_views_view_fields()
  */
 #}
-{#{{ dd(fields) }}#}
+
+{% set card_title = fields.field_card_rcar_ref.content|striptags|trim %}
+
 {% set card_type = fields.field_card_card_type_ref.content|striptags|trim %}
 {% set card_button_content = "Go To "~ fields.title.content|striptags|trim %}
 
 {#{% set card_modifiers = ['multiple'] %}#}
-{% if card_type == 'Summary with Long Text' %}
-  {% if (fields.field_card_summary.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim) is not empty %}
-    {% set card_body = fields.field_card_summary.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
-  {% else %}
-    {% set card_body = fields.field_card_body.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
+{% if card_type %}
+  {% if card_type == 'Summary with Long Text' %}
+    {% if (fields.field_card_summary.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim) is not empty %}
+      {% set card_body = fields.field_card_summary.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
+    {% else %}
+      {% set card_body = fields.field_card_body.content|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
+    {% endif %}
+  {% elseif card_type == 'Accordion with Summary' %}
+      {% set card_body = fields.field_card_accordion_body.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
+    {% set card_extra_content = fields.field_card_accordion_body_1.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
   {% endif %}
-{% elseif card_type == 'Accordion with Summary' %}
-    {% set card_body = fields.field_card_accordion_body.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim|truncate(200) %}
-  {% set card_extra_content = fields.field_card_accordion_body_1.content|render|striptags('<p>')|replace({"<p>":"", "</p>":""})|trim %}
-{% endif %}
 
-{% embed "@molecules/wvu-guide/wvu-guide.twig" with {
-  card_title: fields.title.content|striptags|trim,
-  card_body_modifiers: '',
-  card_body_blockname: '',
-  card_button_url: fields.view_node.content|striptags|trim,
-  card_button_content: card_button_content,
-  card_body_extra: card_extra_content
-} %}
-  {% block paragraph_content %}
-    {{ card_body }}
-  {% endblock %}
-{% endembed %}
+  {% embed "@molecules/wvu-guide/wvu-guide.twig" with {
+    card_serial_number: row.index + 1,
+    card_body_modifiers: '',
+    card_body_blockname: '',
+    card_button_url: fields.view_node.content|striptags|trim,
+    card_button_content: card_button_content,
+    card_body_extra: card_extra_content
+  } %}
+    {% block paragraph_content %}
+      {{ card_body }}
+    {% endblock %}
+  {% endembed %}
+{% endif %}
